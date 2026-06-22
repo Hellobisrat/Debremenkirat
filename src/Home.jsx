@@ -40,18 +40,21 @@ function Home() {
           {/* Main Title */}
           <h1 className="text-2xl md:text-3xl font-extrabold 
                          text-gray-900 dark:text-gray-100 leading-snug">
-            ሰው የመዝሙር ጥናት ቀኖች 
+            የመዝሙር ጥናት ቀኖች 
           </h1>
 
           {/* Paragraph */}
-          <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
+          <p className="text-gray-800 dark:text-gray-200 text-lg flex flex-col leading-relaxed">
            ማክሰኞ  8 እስከ 9 በቫይበር
+           <p className="mr-2">የቡድን መሪ<span className="text-red-300 ml-3">ወለላ</span></p>
           </p>
-           <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
+           <p className="text-gray-800 dark:text-gray-200 text-lg flex flex-col leading-relaxed">
             ሃሙስ 8 እስከ 9 በቫይበር
+           <p className="">የቡድን መሪ<span className="text-red-300 ml-3">ረድኢት</span></p> 
           </p>
-           <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
+           <p className="text-gray-800 dark:text-gray-200 text-lg  flex flex-col leading-relaxed">
            ዐርብ 8 እስከ 9 በቫይበር
+           <p className="mr-2">የቡድን መሪ<span className="text-red-300 ml-3">ሰላም</span></p>
           </p>
 
           {/* Button */}
