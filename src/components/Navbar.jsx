@@ -17,7 +17,7 @@ const Navbar = () => {
       "
     >
       <h5 className="text-purple-200 dark:text-purple-300 text-xl font-bold tracking-wide drop-shadow-md">
-        <Link to="/">ውዳሴ ማርያም</Link>
+        <Link to="/">መዝሙር ገፅ</Link>
       </h5>
 
       <ul className="flex items-center gap-6 text-sm font-semibold">
@@ -27,7 +27,7 @@ const Navbar = () => {
             className="flex items-center gap-1 hover:opacity-80 dark:hover:opacity-70 transition"
           >
             <Home size={18} />
-            <span>Home</span>
+            <span>መጀመሪያ ገፅ</span>
           </Link>
         </li>
 

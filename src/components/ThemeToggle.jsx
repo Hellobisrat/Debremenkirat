@@ -1,27 +1,37 @@
 import { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(
-    localStorage.getItem("theme") === "dark"
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
   );
 
   useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+    const root = document.documentElement;
+
+    if (theme === "dark") {
+      root.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      root.classList.remove("dark");
     }
-  }, [dark]);
+
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <button
-      onClick={() => setDark(!dark)}
-      className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition"
-    >
-      {dark ? <Sun size={18} /> : <Moon size={18} />}
-    </button>
+  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+  className="p-2 flex items-center justify-center w-12 h-12 
+             bg-yellow-500 dark:bg-gray-700 
+             rounded-full transition-all active:scale-95"
+>
+  {theme === "dark" ? (
+    <FiSun className="text-yellow-300 text-2xl drop-shadow-[0_0_6px_rgba(255,255,0,0.6)]"/>
+  ) : (
+    <FiMoon className="text-slate-200 text-2xl drop-shadow-[0_0_6px_rgba(150,200,255,0.5)]" />
+  )}
+</button>
   );
 }
+

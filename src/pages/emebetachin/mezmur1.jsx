@@ -5,7 +5,10 @@ import PrayerPage from "../../components/PrayerPage"
 
 function mezmur1() {
   return (
-    <PrayerPage {...data}/>
+  
+       <PrayerPage {...data}/>
+ 
+   
   )
 }
 
