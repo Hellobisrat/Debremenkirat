@@ -9,7 +9,7 @@ const days = [
 export default function Index1() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center relative 
+      className="min-h-screen flex items-center bg-sky-200 justify-center px-4 bg-center bg-cover  relative 
                  dark:bg-gray-900 transition-colors duration-300"
        style={{
   backgroundImage: `url(${geyorgis})`,
