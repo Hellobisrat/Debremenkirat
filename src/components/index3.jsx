@@ -1,22 +1,18 @@
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import geyorgis from "../image/geyorgis.png"
-
-
+import { Link } from "react-router-dom"
 
 
 const days = [
-  { label: "ለማርያም", link: "/yemebetachinmezmur1" },
-  {label:"ማርያም ማርያም ", link:'/mariammariam'},
-  {label: "እናት አለኝ የምታብስ እንባ",link:"/enatalegn"},
-  {label:"እንተ በህሊና", link:"/entebehlina"},
-  {label:"እመቤቴ የአምላክ እናት", link:"/yamilakenat"}
+  { label:"mezmur1", link: "/yegetamezmur1" },
+  
+  
 ]
 
-export default function Index1() {
+const Index3 = () => {
   return (
     <div
-      className="min-h-screen flex items-center bg-sky-200 justify-center px-4 bg-center bg-cover  relative 
+      className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
                  dark:bg-gray-900 transition-colors duration-300"
        style={{
   backgroundImage: `url(${geyorgis})`,
@@ -26,7 +22,7 @@ export default function Index1() {
 }}
     >
       {/* Soft overlay */}
-      
+   
 
       <div className="relative w-full max-w-md 
                       bg-purple-100/90 dark:bg-gray-800/90 
@@ -34,7 +30,7 @@ export default function Index1() {
                       transition-colors duration-300 mx-auto">
         
         <h1 className="text-2xl font-bold text-center mb-6 dark:text-gray-100">
-          የ መዝሙር  ምርጫ
+            የ መዝሙር  ምርጫ
         </h1>
 
         <div className="flex flex-col gap-2 text-lg">
@@ -57,15 +53,12 @@ export default function Index1() {
               >
                 {day.label}
               </Link>
-              
             </motion.div>
           ))}
         </div>
-        <Link to='/index3'>
-        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2' >ቀጥል</button>
-        </Link>
-          
       </div>
     </div>
   )
 }
+
+export default Index3
