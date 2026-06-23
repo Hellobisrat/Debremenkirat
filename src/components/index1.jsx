@@ -2,8 +2,15 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import geyorgis from "../image/geyorgis.png"
 
+
+
+
 const days = [
-  { label: "mezmur1", link: "/yemebetachinmezmur1" },
+  { label: "ለማርያም", link: "/yemebetachinmezmur1" },
+  {label:"ማርያም ማርያም ", link:'/mariammariam'},
+  {label: "እናት አለኝ የምታብስ እንባ",link:"/enatalegn"},
+  {label:"እንተ በህሊና", link:"/entebehlina"},
+  {label:"የጌታዬ እናት ማርያም", link:"/yegetaye"}
 ]
 
 export default function Index1() {

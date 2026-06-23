@@ -34,7 +34,7 @@ function Home() {
         </div>
 
         {/* RIGHT SIDE — TEXT + BUTTON + TODAY CARD */}
-         <div className="relative  flex flex-col justify-center space-y-6 gap-8 max-w-3xl w-full 
+         <div className="relative  flex flex-col justify-center items-center space-y-6 gap-8 max-w-3xl w-full 
                       bg-white/15 dark:bg-gray-800/90 
                       backdrop-blur-md rounded-2xl shadow-2xl p-8 
                       animate-fadeIn transition-colors duration-300">
@@ -44,8 +44,8 @@ function Home() {
 
           {/* Small Title */}
 
-          <div className="uppercase tracking-wide text-xl text-red-200 dark:text-red-400 font-extrabold">
-            የደብረ መንክራት ሰንበት ትምህርት ቤት መዝሙር ክፍል
+          <div className="uppercase tracking-wide text-xl text-sky-200 dark:text-sky-400 font-extrabold text-center">
+            የፍሬ ሃይማኖት ሰንበት ትምህርት ቤት መዝሙር ክፍል
           </div>
 
           {/* Main Title */}
@@ -56,9 +56,9 @@ function Home() {
 
           {/* Schedule */}
           <div className="space-y-2 text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
-            <p>ማክሰኞ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ወለላ</span></p>
-            <p>ሃሙስ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ረድኢት</span></p>
-            <p>ዐርብ ፡ 8 – 9 በአካል — <span className="text-red-400 font-bold">ሰላም</span></p>
+            <p>ማክሰኞ ፡ 8 – 9 በቫይበር — የቡድን መሪ <span className="text-red-400 font-bold">ወለላ</span></p>
+            <p>ሃሙስ ፡ 8 – 9 በቫይበር — የቡድን መሪ <span className="text-red-400 font-bold">ረድኢት</span></p>
+            <p>ዐርብ ፡ 8 – 9 በአካል — የቡድን መሪ <span className="text-red-400 font-bold">ሰላም</span></p>
           </div>
 
           {/* Button */}

@@ -7,6 +7,10 @@ import Index2 from "./components/index2";
 
 import EmebetachinMezmur1 from "./pages/emebetachin/mezmur1";
 import GetachinMezmur1 from "./pages/getachin/mezmur1";
+import MariamMariam from "./pages/emebetachin/mariammariam";
+import EnatAlegn from "./pages/emebetachin/enatalegn"
+import EnteBehilina from './pages/emebetachin/entebehlina'
+import Yegetayenat from "./pages/emebetachin/yegetayenat";
 import Home  from './Home';
 import Footer from "./components/Footer";
 
@@ -23,6 +27,10 @@ export default function App() {
 
         <Route path="/yemebetachinmezmur1" element={<EmebetachinMezmur1 />} />
         <Route path="/yegetamezmur1" element={<GetachinMezmur1 />} />
+        <Route path="/mariammariam" element={<MariamMariam />} />
+        <Route path="/enatalegn" element={<EnatAlegn/>}/>
+        <Route path="/entebehlina" element={<EnteBehilina/>}/>
+        <Route path="/yegetaye" element={<Yegetayenat/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
