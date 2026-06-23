@@ -8,6 +8,7 @@ import Index2 from "./components/index2";
 import EmebetachinMezmur1 from "./pages/emebetachin/mezmur1";
 import GetachinMezmur1 from "./pages/getachin/mezmur1";
 import Home  from './Home';
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/yemebetachinmezmur1" element={<EmebetachinMezmur1 />} />
         <Route path="/yegetamezmur1" element={<GetachinMezmur1 />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
