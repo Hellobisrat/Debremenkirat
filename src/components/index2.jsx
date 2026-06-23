@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import church from "../image/debremenkirat512.jpg"
+import geyorgis from "../image/geyorgis.png"
 
 
 const days = [
@@ -14,10 +14,15 @@ const Index2 = () => {
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center relative 
                  dark:bg-gray-900 transition-colors duration-300"
-      style={{ backgroundImage: `url(${church})` }}
+       style={{
+  backgroundImage: `url(${geyorgis})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+  backgroundPosition: "auto"
+}}
     >
       {/* Soft overlay */}
-      <div className="absolute inset-0 bg-black/40 dark:bg-black/60 backdrop-blur-sm"></div>
+   
 
       <div className="relative w-full max-w-md 
                       bg-purple-100/90 dark:bg-gray-800/90 
