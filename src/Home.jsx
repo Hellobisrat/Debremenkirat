@@ -1,79 +1,91 @@
 import React from "react";
 import emebetachin from "./image/emebetachint.png";
 import church from "./image/church.png";
-import { Link } from "react-router-dom"
 
+
+
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const day = now.toLocaleDateString("am-ET", { weekday: "long" });
+  const time = now.toLocaleTimeString("am-ET", { hour: "2-digit", minute: "2-digit" });
+
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 py-10 relative 
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 py-10 
                  dark:bg-gray-900 transition-colors duration-300"
       style={{ backgroundImage: `url(${church})` }}
     >
-      {/* Dark overlay for readability */}
-      
+        <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
+      <div className="grid md:grid-cols-2 gap-10 max-w-5xl w-full p-4">
 
-      {/* Content */}
-      <div className="relative grid md:grid-cols-2 gap-8 max-w-3xl w-full 
-                      bg-white/85 dark:bg-gray-800/90 
-                      backdrop-blur-md rounded-2xl shadow-2xl p-8 
-                      animate-fadeIn transition-colors duration-300">
-
-        {/* Image */}
-        <div className="flex justify-center">
+        {/* LEFT SIDE — IMAGE */}
+        <div className="flex justify-center items-center">
           <img
             src={emebetachin}
             alt="Emebetachin"
-            className="rounded-xl shadow-lg w-64 md:w-80 object-cover"
+            className="rounded-2xl shadow-2xl w-72 md:w-96 object-cover"
           />
         </div>
 
-        {/* Text Section */}
-        <div className="flex flex-col justify-center space-y-4">
+        {/* RIGHT SIDE — TEXT + BUTTON + TODAY CARD */}
+         <div className="relative  flex flex-col justify-center space-y-6 gap-8 max-w-3xl w-full 
+                      bg-white/15 dark:bg-gray-800/90 
+                      backdrop-blur-md rounded-2xl shadow-2xl p-8 
+                      animate-fadeIn transition-colors duration-300">
+
+          {/* TODAY CARD */}
+          <div className="bg-white/80 dark:bg-gray-800/80 shadow-lg rounded-xl p-4 w-fit">
+            <p className="text-gray-700 dark:text-gray-200 text-sm font-semibold">
+              ዛሬ፡ {day}
+            </p>
+            <p className="text-gray-900 dark:text-gray-100 text-lg font-bold">
+              {time}
+            </p>
+          </div>
 
           {/* Small Title */}
+
           <div className="uppercase tracking-wide text-sm text-red-600 dark:text-red-400 font-bold">
-            የደብረ መንክራት ሰንበት ትምህት  መዝሙር ክፍል
+            የደብረ መንክራት ሰንበት ትምህት መዝሙር ክፍል
           </div>
 
           {/* Main Title */}
-          <h1 className="text-2xl md:text-3xl font-extrabold 
+          <h1 className="text-3xl md:text-4xl font-extrabold 
                          text-gray-900 dark:text-gray-100 leading-snug">
-            የመዝሙር ጥናት ቀኖች 
+            የመዝሙር ጥናት ቀኖች
           </h1>
 
-          {/* Paragraph */}
-          <p className="text-gray-800 dark:text-gray-200 text-lg flex flex-col leading-relaxed">
-           ማክሰኞ  8 እስከ 9 በቫይበር
-           <p className="mr-2">የቡድን መሪ<span className="text-red-300 ml-3">ወለላ</span></p>
-          </p>
-           <p className="text-gray-800 dark:text-gray-200 text-lg flex flex-col leading-relaxed">
-            ሃሙስ 8 እስከ 9 በቫይበር
-           <p className="">የቡድን መሪ<span className="text-red-300 ml-3">ረድኢት</span></p> 
-          </p>
-           <p className="text-gray-800 dark:text-gray-200 text-lg  flex flex-col leading-relaxed">
-           ዐርብ 8 እስከ 9 በቫይበር
-           <p className="mr-2">የቡድን መሪ<span className="text-red-300 ml-3">ሰላም</span></p>
-          </p>
+          {/* Schedule */}
+          <div className="space-y-2 text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
+            <p>ማክሰኞ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ወለላ</span></p>
+            <p>ሃሙስ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ረድኢት</span></p>
+            <p>ዐርብ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ሰላም</span></p>
+          </div>
 
           {/* Button */}
           <Link
             to="/index"
-            className="inline-block mt-4 bg-red-600 hover:bg-red-700 
+            className="inline-block bg-red-600 hover:bg-red-700 
                        dark:bg-red-700 dark:hover:bg-red-800
-                       text-white font-semibold py-2 px-6 rounded-xl shadow-md 
+                       text-white font-semibold py-3 px-8 rounded-xl shadow-md 
                        transition-all active:scale-95 w-fit"
           >
             ጀምር
           </Link>
 
         </div>
-
       </div>
     </div>
   );
 }
 
 export default Home;
-
