@@ -12,7 +12,7 @@ function Home() {
       style={{ backgroundImage: `url(${church})` }}
     >
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
+      
 
       {/* Content */}
       <div className="relative grid md:grid-cols-2 gap-8 max-w-3xl w-full 
