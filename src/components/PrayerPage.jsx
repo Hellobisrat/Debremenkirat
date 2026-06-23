@@ -1,5 +1,5 @@
 import { highlightText } from "../utils/highlight"
-
+import { ArrowBigRight } from "lucide-react"
 export default function PrayerPage({ title, subtitle, sections,link }) {
   return (
     <div className="min-h-screen 
@@ -37,11 +37,11 @@ export default function PrayerPage({ title, subtitle, sections,link }) {
   href={link}
   target="_blank"
   rel="noopener noreferrer"
-  className="block mt-6 text-center text-yellow-600 dark:text-yellow-400 
-             font-bold underline hover:text-yellow-700 dark:hover:text-yellow-300 
+  className="block mt-6 text-center w-25 p-6 rounded-full flex items-center justify-center bg-red-300 text-yellow-600 dark:text-yellow-400 
+             font-bold  hover:text-yellow-700 dark:hover:text-yellow-300 
              transition"
 >
-  YouTube
+  YouTube Link <ArrowBigRight className="w-2 text-purple-300"/>
 </a>
 
       </div>

@@ -23,7 +23,7 @@ export default function Index() {
                       transition-colors duration-300 mx-auto">
         
         <h1 className="text-2xl font-bold text-center mb-6 dark:text-gray-100">
-          የውዳሴ ማርያም ቀን ምርጫ
+           የ መዝሙር  ምርጫ
         </h1>
 
         <div className="flex flex-col gap-2 text-lg">
