@@ -10,16 +10,16 @@ import { FaYoutube } from "react-icons/fa";
 export default function PrayerPage({ title, subtitle, sections,link }) {
   return (
     <div className="min-h-screen 
-      bg-gradient-to-b from-gray-50 to-gray-300 
+      bg-gradient-to-b from-gray-50 to-gray-500 
       dark:from-gray-900 dark:to-gray-800 
-      py-5 px-4 transition-colors duration-300">
+      py-5 px-2 transition-colors duration-300 ">
 
       <div className="max-w-3xl mx-auto 
-        bg-white dark:bg-gray-800 
+        bg-sky-50 dark:bg-gray-800 
         shadow-xl rounded-xl p-8 
         animate-fadeIn transition-colors duration-300">
 
-        <h1 className="text-center text-xl font-bold dark:text-gray-100">
+        <h1 className="text-center text-xl font-bold dark:text-gray-100 mb-2">
           {title}
         </h1>
 
@@ -31,7 +31,7 @@ export default function PrayerPage({ title, subtitle, sections,link }) {
 
         <div className="space-y-6 text-xl font-semibold leading-10 
           text-gray-800 dark:text-gray-200 
-          p-2 md:p-3 transition-colors duration-300 mx-auto">
+          p-2 md:p-3 md:px-6 transition-colors duration-300 mx-auto">
 
           {sections.map((section, index) => (
             <p
