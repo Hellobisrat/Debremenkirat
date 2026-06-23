@@ -20,12 +20,12 @@ function Home() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 py-10 
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 py-5 
                  dark:bg-gray-900 transition-colors duration-300"
       style={{ backgroundImage: `url(${church})` }}
     >
         <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
-      <div className="grid md:grid-cols-2 gap-10 max-w-5xl w-full p-4">
+      <div className="grid md:grid-cols-2 gap-10 max-w-5xl w-full p-2">
 
         {/* LEFT SIDE — IMAGE */}
         <div className="flex justify-center items-center">
