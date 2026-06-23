@@ -15,7 +15,7 @@ export default function PrayerPage({ title, subtitle, sections,link }) {
       py-5 px-2 transition-colors duration-300 ">
 
       <div className="max-w-3xl mx-auto 
-        bg-sky-50 dark:bg-gray-800 
+        bg-sky-100 dark:bg-gray-800 
         shadow-xl rounded-xl p-8 
         animate-fadeIn transition-colors duration-300">
 
