@@ -45,7 +45,7 @@ function Home() {
           {/* Small Title */}
 
           <div className="uppercase tracking-wide text-xl text-red-200 dark:text-red-400 font-extrabold">
-            የደብረ መንክራት ሰንበት ትምህት መዝሙር ክፍል
+            የደብረ መንክራት ሰንበት ትምህርት ቤት መዝሙር ክፍል
           </div>
 
           {/* Main Title */}
