@@ -58,7 +58,7 @@ function Home() {
           <div className="space-y-2 text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
             <p>ማክሰኞ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ወለላ</span></p>
             <p>ሃሙስ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ረድኢት</span></p>
-            <p>ዐርብ ፡ 8 – 9 በቫይበር — <span className="text-red-400 font-bold">ሰላም</span></p>
+            <p>ዐርብ ፡ 8 – 9 በአካል — <span className="text-red-400 font-bold">ሰላም</span></p>
           </div>
 
           {/* Button */}
