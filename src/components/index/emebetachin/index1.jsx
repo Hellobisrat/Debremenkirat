@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import geyorgis from "../image/geyorgis.png"
+import geyorgis from "../../../image/geyorgis.png";
+
 
 
 

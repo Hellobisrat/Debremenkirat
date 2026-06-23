@@ -1,15 +1,19 @@
 import { motion } from "framer-motion"
-import geyorgis from "../image/geyorgis.png"
+import geyorgis from "../../../image/geyorgis.png";
 import { Link } from "react-router-dom"
 
 
+
 const days = [
-  { label:"mezmur1", link: "/yegetamezmur1" },
+  { label:"ሰባቱ መንጦላይት ", link: "/sebatumentolat" },
+  {label : "የፅድቅ በር ነሽ", link:"/yesidke"},
+  {label : "ድንግል በድንግልና ፀንሳ", link:"/bedingilina"},
+  {label : "ትምክህተ ዘመድነ", link:"/timkite"}
   
   
 ]
 
-const Index3 = () => {
+const Index4 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -55,10 +59,14 @@ const Index3 = () => {
               </Link>
             </motion.div>
           ))}
-        </div>
+        </div> 
+        <Link to='/index3'>
+        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2' >ቀጥል</button>
+        </Link>
       </div>
+      
     </div>
   )
 }
 
-export default Index3
+export default Index4

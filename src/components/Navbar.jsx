@@ -9,32 +9,32 @@ const Navbar = () => {
       className="
         flex justify-between items-center px-5 py-4 
         rounded-t-lg shadow-xl 
-        bg-gradient-to-r from-yellow-600 to-yellow-400 
+        bg-gradient-to-r from-purple-200/30 to-sky-100/40 
         dark:from-gray-900 dark:to-gray-800 
         text-white dark:text-gray-100
         transition-colors duration-300
         will-change-transform
       "
     >
-      <h5 className="text-purple-200 dark:text-purple-300 text-xl font-bold tracking-wide drop-shadow-md">
-        <Link to="/">መዝሙር ገፅ</Link>
+      <h5 className="text-sky-200 bg-yellow-200/20 rounded-full flex items-center justify-center w-50 p-2 dark:text-purple-300 text-xl font-bold tracking-wide drop-shadow-md">
+        <Link to="/">ፍሬ ሃይማኖት</Link>
       </h5>
 
       <ul className="flex items-center gap-6 text-sm font-semibold">
         <li>
           <Link
             to="/"
-            className="flex items-center gap-1 hover:opacity-80 dark:hover:opacity-70 transition"
+            className="flex items-center text-slate-600 gap-1 hover:opacity-80 dark:hover:opacity-70 transition"
           >
             <Home size={18} />
-            <span>መጀመሪያ ገፅ</span>
+            
           </Link>
         </li>
 
         <li>
           <Link
             to="/index"
-            className="flex items-center gap-1 hover:opacity-80 dark:hover:opacity-70 transition"
+            className="flex items-center text-slate-700 gap-1 hover:opacity-80 dark:hover:opacity-70 transition"
           >
             <Menu size={18} />
             <span>ማውጫ</span>
