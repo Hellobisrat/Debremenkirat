@@ -1,9 +1,6 @@
-import React from "react";
+
 import emebetachin from "./image/emebetachint.png";
 import church from "./image/church.png";
-
-
-
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -21,11 +18,11 @@ function Home() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4 py-5 
-                 dark:bg-gray-900 transition-colors duration-300"
+                 dark:bg-gray-900 transition-colors duration-300 relative"
       style={{ backgroundImage: `url(${church})` }}
     >
-        <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
-      <div className="grid md:grid-cols-2 gap-10 max-w-5xl w-full p-2">
+         <div className="absolute inset-0 bg-black/50 dark:bg-black/70  z-0"></div>
+      <div className="grid md:grid-cols-2 gap-5 max-w-5xl w-full p-1 relative">
 
         {/* LEFT SIDE — IMAGE */}
         <div className="flex justify-center items-center">
@@ -43,14 +40,7 @@ function Home() {
                       animate-fadeIn transition-colors duration-300">
 
           {/* TODAY CARD */}
-          <div className="bg-white/80 dark:bg-gray-800/80 shadow-lg rounded-xl p-4 w-fit">
-            <p className="text-gray-700 dark:text-gray-200 text-sm font-semibold">
-              ዛሬ፡ {day}
-            </p>
-            <p className="text-gray-900 dark:text-gray-100 text-lg font-bold">
-              {time}
-            </p>
-          </div>
+         
 
           {/* Small Title */}
 
@@ -81,6 +71,15 @@ function Home() {
           >
             ጀምር
           </Link>
+
+           <div className="bg-white/80 dark:bg-gray-800/80 shadow-lg rounded-xl flex items-center justify-around gap-1 p-1 w-[200px]">
+            <p className="text-gray-700 dark:text-gray-200 text-sm font-semibold">
+              ዛሬ፡ {day}
+            </p>
+            <p className="text-red-600 dark:text-gray-100 text-lg font-bold">
+              {time}
+            </p>
+          </div>
 
         </div>
       </div>
