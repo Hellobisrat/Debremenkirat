@@ -44,12 +44,12 @@ function Home() {
 
           {/* Small Title */}
 
-          <div className="uppercase tracking-wide text-sm text-red-600 dark:text-red-400 font-bold">
+          <div className="uppercase tracking-wide text-xl text-red-200 dark:text-red-400 font-extrabold">
             የደብረ መንክራት ሰንበት ትምህት መዝሙር ክፍል
           </div>
 
           {/* Main Title */}
-          <h1 className="text-3xl md:text-4xl font-extrabold 
+          <h1 className="text-xl md:text-2xl font-bold 
                          text-gray-900 dark:text-gray-100 leading-snug">
             የመዝሙር ጥናት ቀኖች
           </h1>
