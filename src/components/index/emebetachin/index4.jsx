@@ -5,10 +5,10 @@ import { Link } from "react-router-dom"
 
 
 const days = [
-  { label:"ሰባቱ መንጦላይት ", link: "/sebatumentolat" },
-  {label : "የፅድቅ በር ነሽ", link:"/yesidke"},
-  {label : "ድንግል በድንግልና ፀንሳ", link:"/bedingilina"},
-  {label : "ትምክህተ ዘመድነ", link:"/timkite"}
+  { label:" ስደትሽን ሳስብ  ", link: "/sidetish" },
+  {label : "ክበበ ጌራ ወርቅ", link:"/kibebe"},
+  {label : "ገሊላ እትዊ ", link:"/gelilaetewi"},
+  {label : "አዳምን ለማዳን", link:"/adaminlemadan"}
   
   
 ]
@@ -60,9 +60,19 @@ const Index4 = () => {
             </motion.div>
           ))}
         </div> 
-        <Link to='/index3'>
-        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2' >ቀጥል</button>
+        <div className="flex justify-between">
+          <Link to='/index3'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
         </Link>
+        <Link to='/index3'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቀጥል</button>
+        </Link>
+        <Link to='/'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቤት</button>
+        </Link>
+        
+        </div>
+        
       </div>
       
     </div>

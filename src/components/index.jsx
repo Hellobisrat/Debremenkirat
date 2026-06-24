@@ -57,6 +57,9 @@ export default function Index() {
             </motion.div>
           ))}
         </div>
+        <Link to='/'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቤት</button>
+        </Link>
       </div>
     </div>
   )

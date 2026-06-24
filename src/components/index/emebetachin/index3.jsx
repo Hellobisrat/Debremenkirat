@@ -61,9 +61,19 @@ const Index3 = () => {
             </motion.div>
           ))}
         </div>
-        <Link to='/index4'>
-        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2' >ቀጥል</button>
+        <div className="flex justify-between">
+          <Link to='/index'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
         </Link>
+        <Link to='/index4'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቀጥል</button>
+        </Link>
+        <Link to='/'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቤት</button>
+        </Link>
+        </div>
+         
+        
       </div>
        
     </div>
