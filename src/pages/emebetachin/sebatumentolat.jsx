@@ -1,8 +1,9 @@
-import data from "../../data/emebetachin/sebatumentolat.json"
+
 import PrayerPage from "../../components/PrayerPage"
+import { getSong } from "../../utils/getSong"
 
-
-function mariammariam() {
+function sebatumentolat() {
+  const data = getSong('sebatumentolat')
   return (
   
        <PrayerPage {...data}/>
@@ -11,4 +12,4 @@ function mariammariam() {
   )
 }
 
-export default mariammariam
+export default sebatumentolat

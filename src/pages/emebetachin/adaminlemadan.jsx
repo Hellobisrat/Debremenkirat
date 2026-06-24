@@ -1,9 +1,12 @@
-import data from "../../data/emebetachin/adaminlemadan.json"
+
 import PrayerPage from "../../components/PrayerPage"
+import { getSong } from "../../utils/getSong"
 
 
-function Adaminlemadan() {
+function Adaminlemadan() { 
+    const data= getSong("adaminlemadan")
   return (
+ 
   
        <PrayerPage {...data}/>
  

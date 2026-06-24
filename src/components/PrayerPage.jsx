@@ -3,10 +3,6 @@ import { ArrowLeftIcon} from "lucide-react"
 import { FaYoutube } from "react-icons/fa";
 
 
-
-
-
-
 export default function PrayerPage({ title, subtitle, sections,link }) {
   return (
     <div className="min-h-screen 

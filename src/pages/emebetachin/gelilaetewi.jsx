@@ -1,8 +1,9 @@
-import data from "../../data/emebetachin/gelilaetewi.json"
-import PrayerPage from "../../components/PrayerPage"
 
+import PrayerPage from "../../components/PrayerPage"
+import { getSong } from "../../utils/getSong"
 
 function Gelilaetwi(){
+  const data = getSong('gelilaetwi')
   return (
   
        <PrayerPage {...data}/>

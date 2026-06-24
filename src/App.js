@@ -7,7 +7,7 @@ import Index2 from "./components/index2";
 import Index3 from "./components/index/emebetachin/index3";
 import Index4 from "./components/index/emebetachin/index4"
 
-import EmebetachinMezmur1 from "./pages/emebetachin/mezmur1";
+import EmebetachinMezmur1 from "./pages/emebetachin/lemariam";
 import GetachinMezmur1 from "./pages/getachin/mezmur1";
 import MariamMariam from "./pages/emebetachin/mariammariam";
 import EnatAlegn from "./pages/emebetachin/enatalegn"
