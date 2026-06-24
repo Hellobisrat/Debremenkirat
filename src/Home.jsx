@@ -60,7 +60,15 @@ function Home() {
             <p>ሃሙስ ፡ 8 – 9 በቫይበር — የቡድን መሪ <span className="text-red-400 font-bold">ረድኤት</span></p>
             <p>ዐርብ ፡ 8 – 9 በአካል — የቡድን መሪ <span className="text-red-400 font-bold">ሰላም</span></p>
           </div>
-
+         <Link
+            to="/yesamintu"
+            className=" bg-blue-400 hover:bg-red-700 
+                       dark:bg-red-700 dark:hover:bg-red-800
+                       text-white font-semibold py-3 px-8 rounded-xl shadow-md 
+                       transition-all active:scale-95 w-full flex items-center justify-center"
+          >
+            የዚሳምንት መዝሙር
+          </Link>
           {/* Button */}
           <Link
             to="/index"

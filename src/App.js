@@ -24,6 +24,7 @@ import Gelilaetwi from "./pages/emebetachin/gelilaetewi";
 import Adaminlemadan from "./pages/emebetachin/adaminlemadan";
 import Home  from './Home';
 import Footer from "./components/Footer";
+import Yesamintu from "./pages/yesamintu";
 
 export default function App() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
         <Route path="/kibebe" element={<Kibebe/>}/>
         <Route path="/gelilaetewi" element={<Gelilaetwi/>}/>
         <Route path="/adaminlemadan" element={<Adaminlemadan/>}/>
+        <Route path="/yesamintu" element={<Yesamintu/>}/>
 
       </Routes>
       <Footer/>
