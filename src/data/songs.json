@@ -604,12 +604,11 @@
   "link":"https://youtu.be/yd1u0RwF3eM?si=wZNlg54iDB3b8FyS"
 }
   
-
 },
 "yegetachin":{
-"sebehewo":{
-  "id":"sebhewo",
-  "title": "ሰብህዎ ለአምላክነ",
+  "sebhewo":{
+    "id":"sebhewo",
+    "title": "ሰብህዎ ለአምላክነ",
     "subtitle":"አዝ፡ 'ሰብህዎ ለአምላክነ ሃሌ ሉያ ለእግዚአብሔር /፪/ በሰማይ በምድር/፮/' ",
   "sections": [
     {
@@ -629,30 +628,13 @@
     
   ],
   "link":"https://youtu.be/OS8YgYZDKfY?is=qA4rRI0zQCEYHutv"
-}
-
-}
- 
-
- 
-
- 
-
-
-
- 
-
-
-
-
-  
-  
-    
+  }
    
    
     
     
     
+}
 }
 
 

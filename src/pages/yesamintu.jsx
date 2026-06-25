@@ -8,7 +8,7 @@ export default function Yesamintu() {
   const categories = Object.keys(songs.emebetachin);
 
   // Getachin list
-  const lists = Object.keys(songs.getachin);
+  const lists = Object.keys(songs.yegetachin);
 
   const [selected, setSelected] = useState(
     localStorage.getItem("weeklySong") || categories[0]
@@ -20,7 +20,7 @@ export default function Yesamintu() {
 
   // Load data
   const data = getSong("emebetachin", selected);
-  const data1 = getSong("getachin", yegetaMez);
+  const data1 = getSong("yegetachin", yegetaMez);
 
   const handleChange = (value) => {
     setSelected(value);
@@ -60,7 +60,7 @@ export default function Yesamintu() {
         >
           {lists.map((item) => (
             <option key={item} value={item}>
-              {songs.getachin[item].title}
+              {songs.yegetachin[item].title}
             </option>
           ))}
         </select>
