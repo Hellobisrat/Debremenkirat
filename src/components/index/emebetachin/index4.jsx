@@ -4,11 +4,15 @@ import { Link } from "react-router-dom"
 
 
 
+
 const days = [
   { label:" ስደትሽን ሳስብ  ", link: "/sidetish" },
   {label : "ክበበ ጌራ ወርቅ", link:"/kibebe"},
   {label : "ገሊላ እትዊ ", link:"/gelilaetewi"},
-  {label : "አዳምን ለማዳን", link:"/adaminlemadan"}
+  {label : "አዳምን ለማዳን", link:"/adaminlemadan"},
+  {label:"አንቺን የያዘ ሰው",link:"/anchin"},
+  {label:"ምክንያት ስላለኝ ነው",link:"/mikniyat"}
+
   
   
 ]

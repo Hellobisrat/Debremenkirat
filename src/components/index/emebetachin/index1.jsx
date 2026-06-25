@@ -6,13 +6,15 @@ import geyorgis from "../../../image/geyorgis.png";
 
 
 
+
 const days = [
   { label: "ለማርያም", link: "/yemebetachinmezmur1" },
   {label:"ማርያም ማርያም ", link:'/mariammariam'},
   {label: "እናት አለኝ የምታብስ እንባ",link:"/enatalegn"},
   {label:"እንተ በህሊና", link:"/entebehlina"},
   {label:"እመቤቴ የአምላክ እናት", link:"/yamilakenat"},
-  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"}
+  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredwebzema"},
+  {label:"እመቤቴ የአምላክ እናት", link:"/embeteyamilk"}
 ]
 
 export default function Index1() {

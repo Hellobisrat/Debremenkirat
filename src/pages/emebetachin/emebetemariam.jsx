@@ -1,12 +1,11 @@
-
 import PrayerPage from "../../components/PrayerPage"
 import { getSong } from "../../utils/getSong"
 
-const yeyaredwebzema = () => {
-   const data= getSong("yeyaredwebzema")
+const emebetemariam = () => {
+   const data= getSong("emebetemariam")
   return (
      <PrayerPage {...data}/>
   )
 }
 
-export default yeyaredwebzema
+export default emebetemariam

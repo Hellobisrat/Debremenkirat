@@ -12,8 +12,8 @@ const days = [
   {label : "ድንግል በድንግልና ፀንሳ", link:"/bedingilina"},
   {label : "ትምክህተ ዘመድነ", link:"/timkite"},
   {label : "ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/humumneger"},
-  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"},
-  {label:"ስምሽን ስጠራ ድንግል",link:""}
+  {label:" እመቤቴ ማርያም",link:"/embete"},
+  {label:"ስምሽን ስጠራ ድንግል",link:"/simshinseteraw"}
   
   
   

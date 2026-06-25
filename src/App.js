@@ -28,6 +28,11 @@ import Yesamintu from "./pages/yesamintu";
 import HulunegerBegishen from "./pages/emebetachin/hulunegerhoneBegishn";
 import Yeyaredwebzema from "./pages/emebetachin/yeyaredwebzema";
 import Simishensiteraw from "./pages/emebetachin/simishensiteraw";
+import Emebetemariam from "./pages/emebetachin/emebetemariam";
+import Emebeteyamilakenat from "./pages/emebetachin/emebeteyamilakenat";
+import Anchinyeyazesew from "./pages/emebetachin/anchinyeyazesew";
+import Mikinyatsilalegn from "./pages/emebetachin/mikniyatsilalegn";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -58,8 +63,12 @@ export default function App() {
         <Route path="/adaminlemadan" element={<Adaminlemadan/>}/>
         <Route path="/yesamintu" element={<Yesamintu/>}/>
         <Route path="/humumneger" element={<HulunegerBegishen/>}/>
-        <Route path="/yeyaredweb" element={<Yeyaredwebzema/>}/>
-        <Route path="/simshin" element={<Simishensiteraw/>}/>
+        <Route path="/yeyaredwebzema" element={<Yeyaredwebzema/>}/>
+        <Route path="/simshinseteraw" element={<Simishensiteraw/>}/>
+        <Route path="/embete" element={<Emebetemariam/>}/>
+        <Route path="/embeteyamilk" element={<Emebeteyamilakenat/>}/>
+        <Route path="/anchin" element={<Anchinyeyazesew/>}/>
+        <Route path="/mikniyat" element={<Mikinyatsilalegn/>}/>
 
       </Routes>
       <Footer/>
