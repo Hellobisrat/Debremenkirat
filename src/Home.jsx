@@ -61,7 +61,7 @@ function Home() {
             <p>ዐርብ ፡ 8 – 9 በአካል — የቡድን መሪ <span className="text-red-400 font-bold">ሰላም</span></p>
           </div>
          <Link
-            to="/yesamintu'"
+            to="/yesamintu"
             className=" bg-blue-400 hover:bg-red-700 
                        dark:bg-red-700 dark:hover:bg-red-800
                        text-white font-semibold py-3 px-8 rounded-xl shadow-md 
