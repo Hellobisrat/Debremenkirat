@@ -5,12 +5,15 @@ import { Link } from "react-router-dom"
 
 
 
+
 const days = [
   { label:"ሰባቱ መንጦላይት ", link: "/sebatumentolat" },
   {label : "የፅድቅ በር ነሽ", link:"/yesidke"},
   {label : "ድንግል በድንግልና ፀንሳ", link:"/bedingilina"},
   {label : "ትምክህተ ዘመድነ", link:"/timkite"},
-  {label:"ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/humumneger"}
+  {label : "ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/humumneger"},
+  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"},
+  {label:"ስምሽን ስጠራ ድንግል",link:""}
   
   
   

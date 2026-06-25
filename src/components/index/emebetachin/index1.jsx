@@ -11,7 +11,8 @@ const days = [
   {label:"ማርያም ማርያም ", link:'/mariammariam'},
   {label: "እናት አለኝ የምታብስ እንባ",link:"/enatalegn"},
   {label:"እንተ በህሊና", link:"/entebehlina"},
-  {label:"እመቤቴ የአምላክ እናት", link:"/yamilakenat"}
+  {label:"እመቤቴ የአምላክ እናት", link:"/yamilakenat"},
+  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"}
 ]
 
 export default function Index1() {

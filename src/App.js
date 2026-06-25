@@ -26,6 +26,8 @@ import Home  from './Home';
 import Footer from "./components/Footer";
 import Yesamintu from "./pages/yesamintu";
 import HulunegerBegishen from "./pages/emebetachin/hulunegerhoneBegishn";
+import Yeyaredwebzema from "./pages/emebetachin/yeyaredwebzema";
+import Simishensiteraw from "./pages/emebetachin/simishensiteraw";
 export default function App() {
   return (
     <BrowserRouter>
@@ -56,6 +58,8 @@ export default function App() {
         <Route path="/adaminlemadan" element={<Adaminlemadan/>}/>
         <Route path="/yesamintu" element={<Yesamintu/>}/>
         <Route path="/humumneger" element={<HulunegerBegishen/>}/>
+        <Route path="/yeyaredweb" element={<Yeyaredwebzema/>}/>
+        <Route path="/simshin" element={<Simishensiteraw/>}/>
 
       </Routes>
       <Footer/>
