@@ -1,44 +1,35 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import geyorgis from "../../../image/geyorgis.png";
-import { Link } from "react-router-dom"
-
-
-
+import { Link } from "react-router-dom";
 
 const days = [
-  { label:" ስደትሽን ሳስብ  ", link: "/song/emebetachin/sidetish" },
-  {label : "ክበበ ጌራ ወርቅ", link:"/song/emebetachin/kibebe"},
-  {label : "ገሊላ እትዊ ", link:"/song/emebetachin/gelilaetewi"},
-  {label : "አዳምን ለማዳን", link:"/song/emebetachin/adaminlemadan"},
-  {label:"አንቺን የያዘ ሰው",link:"/song/emebetachin/anchinyeyazesew"},
-  {label:"ምክንያት ስላለኝ ነው",link:"/song/emebetachin/mikniyatsilalegn"}
-
-  
-  
-]
+  { label: "ስደትሽን ሳስብ", link: "/song/emebetachin/sidetish" },
+  { label: "ክበበ ጌራ ወርቅ", link: "/song/emebetachin/kibebe" },
+  { label: "ገሊላ እትዊ", link: "/song/emebetachin/gelilaetewi" },
+  { label: "አዳምን ለማዳን", link: "/song/emebetachin/adaminlemadan" },
+  { label: "አንቺን የያዘ ሰው", link: "/song/emebetachin/anchinyeyazesew" },
+  { label: "ምክንያት ስላለኝ ነው", link: "/song/emebetachin/mikniyatsilalegn" }
+];
 
 const Index4 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
                  dark:bg-gray-900 transition-colors duration-300"
-       style={{
-  backgroundImage: `url(${geyorgis})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "contain",
-  backgroundPosition: "auto"
-}}
+      style={{
+        backgroundImage: `url(${geyorgis})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "auto"
+      }}
     >
-      {/* Soft overlay */}
-   
-
       <div className="relative w-full max-w-md 
                       bg-purple-100/90 dark:bg-gray-800/90 
                       shadow-xl rounded-2xl p-8 
                       transition-colors duration-300 mx-auto">
         
         <h1 className="text-2xl font-bold text-center mb-6 dark:text-gray-100">
-            የ መዝሙር  ምርጫ
+          የ መዝሙር ምርጫ
         </h1>
 
         <div className="flex flex-col gap-2 text-lg">
@@ -63,24 +54,30 @@ const Index4 = () => {
               </Link>
             </motion.div>
           ))}
-        </div> 
-        <div className="flex justify-between">
-          <Link to='/index3'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
-        </Link>
-        <Link to='/'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቀጥል</button>
-        </Link>
-        <Link to='/'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቤት</button>
-        </Link>
-        
         </div>
-        
-      </div>
-      
-    </div>
-  )
-}
 
-export default Index4
+        <div className="flex justify-between">
+          <Link to="/index3">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ተመለስ
+            </button>
+          </Link>
+
+          <Link to="/">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ቀጥል
+            </button>
+          </Link>
+
+          <Link to="/">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ቤት
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Index4;

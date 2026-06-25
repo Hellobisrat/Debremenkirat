@@ -1,46 +1,36 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import geyorgis from "../../../image/geyorgis.png";
-import { Link } from "react-router-dom"
-
-
-
-
+import { Link } from "react-router-dom";
 
 const days = [
-  { label:"ሰባቱ መንጦላይት ", link: "/song/emebetachin/sebatumentolat" },
-  {label : "የፅድቅ በር ነሽ", link:"/song/emebetachin/yesidikbere"},
-  {label : "ድንግል በድንግልና ፀንሳ", link:"/song/emebetachin/bedingilina"},
-  {label : "ትምክህተ ዘመድነ", link:"/song/emebetachin/timikete"},
-  {label : "ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/song/emebetachin/huluNegerHoneBeGishen"},
-  {label:" እመቤቴ ማርያም",link:"/song/emebetachin/emebetemariam"},
-  {label:"ስምሽን ስጠራ ድንግል",link:"/song/emebetachin/simishenseteraw"}
-  
-  
-  
-]
+  { label: "ሰባቱ መንጦላይት", link: "/song/emebetachin/sebatumentolat" },
+  { label: "የፅድቅ በር ነሽ", link: "/song/emebetachin/yesidikbere" },
+  { label: "ድንግል በድንግልና ፀንሳ", link: "/song/emebetachin/bedingilina" },
+  { label: "ትምክህተ ዘመድነ", link: "/song/emebetachin/timikete" },
+  { label: "ሁሉም ነገር ሆነ በግሸን ማርያም", link: "/song/emebetachin/huluNegerHoneBeGishen" },
+  { label: "እመቤቴ ማርያም", link: "/song/emebetachin/emebetemariam" },
+  { label: "ስምሽን ስጠራ ድንግል", link: "/song/emebetachin/simishenseteraw" }
+];
 
 const Index3 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
                  dark:bg-gray-900 transition-colors duration-300"
-       style={{
-  backgroundImage: `url(${geyorgis})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "contain",
-  backgroundPosition: "auto"
-}}
+      style={{
+        backgroundImage: `url(${geyorgis})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "auto"
+      }}
     >
-      {/* Soft overlay */}
-   
-
       <div className="relative w-full max-w-md 
                       bg-purple-100/90 dark:bg-gray-800/90 
                       shadow-xl rounded-2xl p-8 
                       transition-colors duration-300 mx-auto">
         
         <h1 className="text-2xl font-bold text-center mb-6 dark:text-gray-100">
-            የ መዝሙር  ምርጫ
+          የ መዝሙር ምርጫ
         </h1>
 
         <div className="flex flex-col gap-2 text-lg">
@@ -66,23 +56,29 @@ const Index3 = () => {
             </motion.div>
           ))}
         </div>
-        <div className="flex justify-between">
-          <Link to='/index1'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
-        </Link>
-        <Link to='/index4'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቀጥል</button>
-        </Link>
-        <Link to='/'>
-        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቤት</button>
-        </Link>
-        </div>
-         
-        
-      </div>
-       
-    </div>
-  )
-}
 
-export default Index3
+        <div className="flex justify-between">
+          <Link to="/index1">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ተመለስ
+            </button>
+          </Link>
+
+          <Link to="/index4">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ቀጥል
+            </button>
+          </Link>
+
+          <Link to="/">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              ቤት
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Index3;

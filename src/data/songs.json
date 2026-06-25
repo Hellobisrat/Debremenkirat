@@ -119,8 +119,7 @@
     
   ],
   "link":"https://youtu.be/H3nTGy1G5Y4?si=jrheAXtp2kwg2mJs"
-}, 
-"enatalegn":
+}, "enatalegn":
      {
     "id":"enatalegn",
   "title": "እናት አለኝ የምታብስ እንባ",
@@ -145,8 +144,7 @@
   ],
   "link":"https://youtu.be/ywDrlogvF5k?si=LY2S5BK7huDw_ND7"
     }
-  ,
-  "gelilaetewi":
+  ,  "gelilaetewi":
      {
   "id":"gelilaetewi",
   "title": "ገሊላ እትዊ",
@@ -430,8 +428,7 @@
   ],
   "link":"https://youtu.be/blszQal17QE?si=QQowsQ9RGVPgnk3X"
 
-}, 
- "yesidikbere":
+},  "yesidikbere":
     {
   "id":"yesidikbere",
   "title": "የፅድቅ በር ነሽ",
@@ -584,11 +581,10 @@
       ],
     "link":"https://youtu.be/2uoJa1v1y1w?si=8Xbx6-j3g_3FFyMU"
     },
-    "entebehlina":{
-      "id":"entebehlina",
-      
-  "title": "እንተ በህሊና",
-    "subtitle":"አዝ፡ 'እንተ በህሊና እግዚአብሔር ተገብረት (2) መንፈሳዊት ይእቲ ማርያም በእግዚአብሔር ሃሳብ የተሰራች (2) እመቤታችን መንፈሳዊት ( አዝ)' ",
+    "entebehilina":{
+      "id":"entebehilina", 
+     "title": "እንተ በህሊና",
+  "subtitle":"አዝ፡ 'እንተ በህሊና እግዚአብሔር ተገብረት (2) መንፈሳዊት ይእቲ ማርያም በእግዚአብሔር ሃሳብ የተሰራች (2) እመቤታችን መንፈሳዊት ( አዝ)' ",
   "sections": [
     {
       "text": "ምክንያተ ድህነት አንቺ በመሆንሽ የሲኦል ደጆችን ታንቀጠቅጪያለሽ በአንቺ የተደረገው ይህ ታላቅ ሚስጥር አድርጎታልና ሰይጣንን እንዲያፍር"
