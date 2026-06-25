@@ -7,13 +7,13 @@ import { Link } from "react-router-dom"
 
 
 const days = [
-  { label:"ሰባቱ መንጦላይት ", link: "/sebatumentolat" },
-  {label : "የፅድቅ በር ነሽ", link:"/yesidke"},
-  {label : "ድንግል በድንግልና ፀንሳ", link:"/bedingilina"},
-  {label : "ትምክህተ ዘመድነ", link:"/timkite"},
-  {label : "ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/humumneger"},
-  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"},
-  {label:"ስምሽን ስጠራ ድንግል",link:""}
+  { label:"ሰባቱ መንጦላይት ", link: "/song/emebetachin/sebatumentolat" },
+  {label : "የፅድቅ በር ነሽ", link:"/song/emebetachin/yesidikbere"},
+  {label : "ድንግል በድንግልና ፀንሳ", link:"/song/emebetachin/bedingilina"},
+  {label : "ትምክህተ ዘመድነ", link:"/song/emebetachin/timikete"},
+  {label : "ሁሉም ነገር ሆነ በግሸን ማርያም",link:"/song/emebetachin/huluNegerHoneBeGishen"},
+  {label:" እመቤቴ ማርያም",link:"/song/emebetachin/emebetemariam"},
+  {label:"ስምሽን ስጠራ ድንግል",link:"/song/emebetachin/simishenseteraw"}
   
   
   
@@ -67,7 +67,7 @@ const Index3 = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to='/index'>
+          <Link to='/index1'>
         <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
         </Link>
         <Link to='/index4'>

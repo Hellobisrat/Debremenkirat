@@ -6,13 +6,15 @@ import geyorgis from "../../../image/geyorgis.png";
 
 
 
+
 const days = [
-  { label: "ለማርያም", link: "/yemebetachinmezmur1" },
-  {label:"ማርያም ማርያም ", link:'/mariammariam'},
-  {label: "እናት አለኝ የምታብስ እንባ",link:"/enatalegn"},
-  {label:"እንተ በህሊና", link:"/entebehlina"},
-  {label:"እመቤቴ የአምላክ እናት", link:"/yamilakenat"},
-  {label:"የያሬድ ውብ ዜማ",link:"/yeyaredweb"}
+  { label: "ለማርያም", link: "/song/emebetachin/lemariam" },
+  {label:"ማርያም ማርያም ", link:'/song/emebetachin/mariammariam'},
+  {label: "እናት አለኝ የምታብስ እንባ",link:"/song/emebetachin/enatalegn"},
+  {label:"እንተ በህሊና", link:"/song/emebetachin/entebehlina"},
+  {label:"እመቤቴ የአምላክ እናት", link:"/song/emebetachin/yamilakenat"},
+  {label:"የያሬድ ውብ ዜማ",link:"/song/emebetachin/yeyaredwebzema"},
+  {label:"እመቤቴ የአምላክ እናት", link:"/song/emebetachin/emebeteyamilakenat"}
 ]
 
 export default function Index1() {
@@ -63,9 +65,15 @@ export default function Index1() {
             </motion.div>
           ))}
         </div>
-        <Link to='/index3'>
-        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2' >ቀጥል</button>
+        <div className="flex gap-2 justify-around">
+           <Link to='/index3'>
+        <button className='p-2 w-full bg-sky-400 text-white rounded-md mt-2 px-12' >ቀጥል</button>
         </Link>
+        <Link to='/'>
+        <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2 px-12' >ቤት</button>
+        </Link>
+        </div>
+       
           
       </div>
     </div>

@@ -4,11 +4,15 @@ import { Link } from "react-router-dom"
 
 
 
+
 const days = [
-  { label:" ስደትሽን ሳስብ  ", link: "/sidetish" },
-  {label : "ክበበ ጌራ ወርቅ", link:"/kibebe"},
-  {label : "ገሊላ እትዊ ", link:"/gelilaetewi"},
-  {label : "አዳምን ለማዳን", link:"/adaminlemadan"}
+  { label:" ስደትሽን ሳስብ  ", link: "/song/emebetachin/sidetish" },
+  {label : "ክበበ ጌራ ወርቅ", link:"/song/emebetachin/kibebe"},
+  {label : "ገሊላ እትዊ ", link:"/song/emebetachin/gelilaetewi"},
+  {label : "አዳምን ለማዳን", link:"/song/emebetachin/adaminlemadan"},
+  {label:"አንቺን የያዘ ሰው",link:"/song/emebetachin/anchinyeyazesew"},
+  {label:"ምክንያት ስላለኝ ነው",link:"/song/emebetachin/mikniyatsilalegn"}
+
   
   
 ]
@@ -64,7 +68,7 @@ const Index4 = () => {
           <Link to='/index3'>
         <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ተመለስ</button>
         </Link>
-        <Link to='/index3'>
+        <Link to='/'>
         <button className='p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2' >ቀጥል</button>
         </Link>
         <Link to='/'>

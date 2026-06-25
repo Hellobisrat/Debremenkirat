@@ -1,5 +1,5 @@
-import songs from "../data/emebetachin/songs.json";
+import songs from "../data/songs.json";
 
-export function getSong(category) {
-  return songs[category]
+export function getSong(category,id) {
+  return songs[category][id]
 }

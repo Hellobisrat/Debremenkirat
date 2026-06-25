@@ -1,12 +1,14 @@
 import { useState } from "react";
-import songs from "../data/emebetachin/songs.json";
-import yegetasongs from "../data/getachin/yegetaSong.json";
+import songs from "../data/songs.json";
 import PrayerPage from "../components/PrayerPage";
 import { getSong } from "../utils/getSong";
 
 export default function Yesamintu() {
-  const categories = Object.keys(songs);        
-  const lists = Object.keys(yegetasongs);      
+  // Emebetachin list
+  const categories = Object.keys(songs.emebetachin);
+
+  // Getachin list
+  const lists = Object.keys(songs.getachin);
 
   const [selected, setSelected] = useState(
     localStorage.getItem("weeklySong") || categories[0]
@@ -17,8 +19,8 @@ export default function Yesamintu() {
   );
 
   // Load data
-  const data = getSong(selected);               
-  const data1 = yegetasongs[yegetaMez];         
+  const data = getSong("emebetachin", selected);
+  const data1 = getSong("getachin", yegetaMez);
 
   const handleChange = (value) => {
     setSelected(value);
@@ -45,7 +47,7 @@ export default function Yesamintu() {
         >
           {categories.map((cat) => (
             <option key={cat} value={cat}>
-              {songs[cat].title}
+              {songs.emebetachin[cat].title}
             </option>
           ))}
         </select>
@@ -58,7 +60,7 @@ export default function Yesamintu() {
         >
           {lists.map((item) => (
             <option key={item} value={item}>
-              {yegetasongs[item].title}
+              {songs.getachin[item].title}
             </option>
           ))}
         </select>

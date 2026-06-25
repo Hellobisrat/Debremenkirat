@@ -1,5 +1,6 @@
 {
-  "adaminlemadan":
+  "emebetachin":{
+     "adaminlemadan":
     {
      "id": "adaminlemadan",
       "title": "አዳምን ለመዳን",
@@ -98,7 +99,7 @@
   ],
   "link":"https://youtu.be/89L2tDAQtuo?si=owwaL2IJCU-3c5up"
 },
-
+  
   "bedingilina":
       {
   "id": "bedingilina",
@@ -118,8 +119,8 @@
     
   ],
   "link":"https://youtu.be/H3nTGy1G5Y4?si=jrheAXtp2kwg2mJs"
-},
-  "enatalegn":
+}, 
+"enatalegn":
      {
     "id":"enatalegn",
   "title": "እናት አለኝ የምታብስ እንባ",
@@ -166,8 +167,7 @@
     
   ],
   "link":"https://youtu.be/x7AFewhldGM?si=05SVgR3DxCoKqQBV"
-},
-  "kibebe":
+}, "kibebe":
      {
   "id":"kebeke",
   "title": "ክበበ ጌራ ወርቅ",
@@ -198,8 +198,7 @@
     
   ],
   "link":"https://youtu.be/PCQtvbJxTrY?si=vJFAwmWgxH63RNVN"
-},
-  "mariammariam":
+},  "mariammariam":
     {
   "id":"mariammariam",
   "title": "ለማርያም ",
@@ -223,8 +222,7 @@
     
   ],
   "link":"https://youtu.be/QlyjmvT4VzY?si=TP8Y2pZWKeBrJ-P4"
-},
-  "lemariam":
+},  "lemariam":
     {
   "id":"lemariam",
   "title": "ለማርያም ",
@@ -321,8 +319,7 @@
     
   ],
   "link":"https://youtu.be/-cDnDw43jig?is=2DRM_z7Mh51nE7hu"
-},
-  "sebatumentolat":
+},  "sebatumentolat":
     {
   "id":"sebatumentolat",
   "title": "ሰባቱ መንጦላይት",
@@ -344,8 +341,7 @@
     
   ],
   "link":"https://youtu.be/Z6KZJyVp7RA?si=seIqkUCWPpgESnq2"
-},
-  "sidetish":
+}, "sidetish":
     {
   "id":"sidetish",
   "title": "ስደትሽን ሳስብ",
@@ -370,8 +366,7 @@
     
   ],
   "link":"https://youtu.be/TKOPyJ3Aic0?si=gLzUaOqJRjz5dP9-"
-},
-  "timikete":
+},  "timikete":
     {
   "id":"timikete",
   "title": "ትምክህተ ዘመድነ",
@@ -393,8 +388,7 @@
     
   ],
   "link":"https://youtu.be/8RJkpHtMrR8?si=GL1cvp4uzB6hqsoV"
-},
-  "yamilakenat":
+},  "yamilakenat":
     {
   "id":"yamilakenat",
   "title": "እመቤቴ የአምላክ እናት",
@@ -413,8 +407,7 @@
     
   ],
   "link":"https://youtu.be/YJAAs5OitME?si=nhtxUhefz4HI1h_k"
-},
-  "yegetayenat":
+},  "yegetayenat":
     {
   "id":"yegetayenat",
   "title": "የጌታዬ እናት ማርያም",
@@ -437,8 +430,8 @@
   ],
   "link":"https://youtu.be/blszQal17QE?si=QQowsQ9RGVPgnk3X"
 
-},
-  "yesidikbere":
+}, 
+ "yesidikbere":
     {
   "id":"yesidikbere",
   "title": "የፅድቅ በር ነሽ",
@@ -461,8 +454,7 @@
   ],
   "link":"https://youtu.be/pyhB2gNb-BI?si=7_AIRowFmwf0w-iX"
 },
-
-  "huluNegerHoneBeGishen":{
+   "huluNegerHoneBeGishen":{
     "id":"huluNegerHoneBeGishen",
     "title":"ሁሉም ነገር ሆነ በግሸን ማርያም",
     "subtitie":"አዝ፡ 'በደብረ ከርቤ በግሸን ማርያም በእግዚአብሔር ፈቃድ /፪/ ሁሉም ነገር ሆነ /፪/'",
@@ -482,8 +474,7 @@
     ],
     "link":"https://youtu.be/4rmvHhBUBK8?si=v_TLv4pvhYUUM-wa"
   },
-  
-    "yeyaredwebzema":{
+   "yeyaredwebzema":{
        "id":"yeyaredwebzema",
        "title":"የያሬድ ውብ ዜማ",
        "subtitie":"አዝ፡ 'የያሬድ ዉብ ዜማ ድንግል እመቤቴ ስጦታዬ ነሽ / ፪/ በምን አንደበቴ እንዴትስ ባለ ቃል ማርያም ልበልሽ/ ፪/'",
@@ -509,7 +500,7 @@
        ],
        "link":"https://youtu.be/2GuMZISXofI?si=Eo3JGcUgWFbY7ObE"
 
-    },
+    }, 
     "simishenseteraw":{
       "id":"simishenseteraw",
       "title":"ስምሽን ስጠራ ድንግል",
@@ -527,8 +518,145 @@
         {
           "text":"ከሰማይ ሲገኝ ነው አንቺን ማወደስ ሲገለጥ ሲፈቀድ በመንፈስ ቅዱስ ማርያም እናቴ ነሽ ምክንያት ለመዳኔ ብዙ ነው ሚስጥሩ አንቺን ማመስገኔ"
         }
-      ] 
+      ],
+      "link":"https://youtu.be/Ac6t3IzVVCI?si=IP3dhaNuYj83Kkih" 
+    }, 
+    "emebetemariam":{
+      "id":"emebetemariam",
+      "title":"እመቤቴ ማርያም እመቤቴ",
+      "subtitle":"አዝ፡ ' እመቤቴ ማርያም እመቤቴ /2/ ባንቺ ስላደረ የሠራዊት ጌታ እመቤቴ ማርያም ይድረስሽ ሰላሞታ /2/' ",
+      "sections":[
+        {
+          "text":"የናፈኩትን ቀን ያለምኩትን በእንባ አየሁት ኤፍራታ ዘመኑ ሲገባ ዛሬ አዲሱን ቅኔ ተለማምጃለሁ ከመላዕክቱ ጋር አመሰግናለሁ/2/"
+        },
+        {
+          "text":"ከመላእክት አንደበት የተማርኩት አለኝ ሰላም ለኪ ብሎ ገብርኤል ያስቆጠረኝ ከመፅሃፍ ነቅሼ ምወድስ ባነሳ ጣቴ ለበገና ለክብርሽ ተነሳ/2/"
+        },
+        {
+          "text":"ልገስግስ ከምስራቅ ወደ ክብሩ ስፍራ ወደ ታመነችው የልዑል ተራራ ክርስቶስን አቅፈሽ ያጠባሽ እናቱ ብጠራሽ አልጠግብም ድንግል ንግስቲቱ/2/"
+        },
+        {
+          "text":"መኳንንት መሳፍንት ብዙዎች ወልደዎል በክብር የነገሱ በጊዜው አልፈዎል የኢየሱስ እናት ያንቺ ግን ይለያል ሞቶ የሚማርክ ፍቅርን ወልደሻል/2/"
+        }
+      ],
+      "link":"https://youtu.be/0LS-uSAKcSo?si=B9Z2HcrJ62PRMjC_"
+    },
+    "emebeteyamilakenat":{
+      "id":"emebeteyamilakenat",
+      "title":"እመቤቴ የአምላክ እናት",
+       "subtitle":"አዝ፡ ' እመቤቴ የአምላክ እናት ላመስግንሽ ቀን ከሌሊት ለልጅሽም ክብር ውዳሴ ታቀርባለች ዘወትር ነፍሴ (2)' ",
+       "sections":[
+        {
+          "text":"ልቤ ተነሳሳ ተቀኘ ለክብርሽ በፍጹም ትህትና ሊያመሰግንሽ ጽዮን መጠጊያ ነሽ የአብርሃም ድንኳን የታጠረች ተክል እመ ብርሃን።"
+        },
+        {
+          "text":"የለመለመች መስክ አምላክ የመረጣት የጽላቱ ኪዳን  ታቦቱ ድንግል ናት የሰማይ የምድር ንግሥት ናትና ክብር ይገባታል ዘወትር ጠዋት ማታ።"
+        },
+        {
+          "text":"አደራሽን ማርያም የሁሉ እናት በምልጃሽ አስቢኝ ኋላ ስራቆት ያንን የእሳት ባሕር አሻግርኝ ድንግል ሆይ እንዳልወድቅ እንዳልሞት ከቶ እንዳላይ ስቃይ።"
+        }
+       ],
+       "link":"https://youtu.be/YJAAs5OitME?si=xRFSWdGoU-8yYqGp"
+
+    },
+    "anchinyeyazesew":{
+      "id":"anchinyeyazesew",
+      "title":"አንቺን የያዘ ሰው",
+      "subtitle":"አዝ፡ ' አንቺን የያዘ ሰው ምን ይጎድልበታል በምልጃሽ በረከት ቤቱ ሞልቶለታል ዘር መከር ባይኖረው ጎተራው ባይሞላ ሁሉም ይሸፈናል በረድኤትሽ ጥላ /2' ",
+     "sections":[
+      {"text":"በረከትሽ ብዙ የደናግል ገንዘብ የምስኪናን እናት የርሁባን ቀለብ ለሁሉ መጋቢ ፀጋሽ የማይጎድል ስምሽ ጥዑም ምግብ ከረሀብ የሚያስጥል /2/"},
+      {"text":"አንቺ ብትመጪ ከምስኪኗ ቤቴ እንደ መጥምቁ እናት በዛልኝ ሐሴቴ የአዲስ ኪዳን ቁርባን መንበር ጠረጴዛ ፅድቅን አሸተትን የሕይወት መዓዛ /2/"},
+      {"text":"ልቤ ተጠራጥሮ ኪዳንሽን ካልከዳ ልመናም አልወርድም አልይዝም አቆፋዳ ሁሉን እየሞላሽ መመገብ ታውቂያለሽ ቢዝቁት የማያልቅ ፀጋና ሃብት አለሽ /2/"},
+      {"text":"የእግዚአብሔር ማረፊያ ኮሬባዊት ዋሻ የሕይወት ውሃ ምንጭ የህግ መፍሰሻ ነበልባል ተዋህዶሽ ሙሴ አንቺን አይቷል ጫማውን አውልቆ በፊትሽ ተደፍቷል /2/"}
+      
+     ],
+     "link":"https://youtu.be/pT-x8hVbngg?si=1XoYp-rtFKFEmlCN"
+    
+    },
+    "mikniyatsilalegn":{
+      "id":"mikniyatsilalegn",
+      "title":"ምክንያት ስላለኝ ነው",
+      "subtitle":"አዝ፡ 'ምክንያት ስላለኝ ነው የምዘምርልሽ ምክንያት ስላለኝ ነው ቅኔ የምቀኝልሽ አሁንም ይብዛልኝ ፍቅርሽ/2/ ከዚህ በላይ እንዳመሰግንሽ' ",
+      "sections":[
+        {"text":"አውቃለሁ ከደጅሽ ምን እንዳገኘሁኝ አስታውሰዋለሁ ሸክሜን እንደጣልኩኝ የለመንኩሽ ሁሉ መቼ ከንቱ ቀረ ሰይጣን ተመለሰ እንዳቀረቀረ ጠላት ቢከፋውም ለአንቺ በመቆሜ አደገድጋለሁ ደግሜ ደግሜ"},
+        {"text":"ልቤ አርፏል በአንቺ በእናቴ አማላጄ እንቅፋት እሾሁ አይበቅልም በደጄ በሚጣፍጥ ዜማ በኤፍሬም ውዳሴ ሳሸበሽብልሽ ትረካለች ነፍሴ ጠላት ቢከፋውም ለአንቺ በመቆሜ አደገድጋለሁ ደግሜ ደግሜ"},
+        {"text":"ውለታ ያለበት የማይከፈል ሲመሽም ሲነጋም ያመሰግናል ማርያም ማርያም ይላል ምድርና ሰማዩ በልጅሽ መከራ አልፎለት ገዳዩ ጠላት ቢከፋውም ለአንቺ በመቆሜ አደገድጋለሁ ደግሜ ደግሜ"}
+      ],
+    "link":"https://youtu.be/2uoJa1v1y1w?si=8Xbx6-j3g_3FFyMU"
+    },
+    "entebehlina":{
+      "id":"entebehlina",
+      
+  "title": "እንተ በህሊና",
+    "subtitle":"አዝ፡ 'እንተ በህሊና እግዚአብሔር ተገብረት (2) መንፈሳዊት ይእቲ ማርያም በእግዚአብሔር ሃሳብ የተሰራች (2) እመቤታችን መንፈሳዊት ( አዝ)' ",
+  "sections": [
+    {
+      "text": "ምክንያተ ድህነት አንቺ በመሆንሽ የሲኦል ደጆችን ታንቀጠቅጪያለሽ በአንቺ የተደረገው ይህ ታላቅ ሚስጥር አድርጎታልና ሰይጣንን እንዲያፍር"
+    },
+    {
+      "text": "ስለሰዎች ፍቅር ልቦናሽ ያሰባል አለምን ለማዳን አጅሽ ይዘረጋል በሲኦል አንድ ሰው እንዳይቀር በስቃይ ለምህረት ይዘርጋ እጅሽ ወደሰማይ"
+    },
+    {
+      "text": "የሲኦል እሳቱን ስቃዩን አያየሽ ለፍጥረታት ሁሉ ድንግል ሆይ ታዝኛለሽ በአይነ ምህረቱ እንዲያየን ክርስቶስ ለምኝልን ማርያም ፍጥረት እንዲቀደስ" 
+    },
+    {
+      "text": "እንደሚነገረው በአበው አንደበት እኛም እንደምናይ ስንኖር በህይወት  ወላዲተ አምላክ ርህሩህ ፍጥረት ናት ምህረት የምትለምን ዘወትር ሳትታክት"
     }
+    
+    
+  ],
+  "link":"https://youtu.be/yd1u0RwF3eM?si=wZNlg54iDB3b8FyS"
+}
+  
+
+},
+"yegetachin":{
+"sebehewo":{
+  "id":"sebhewo",
+  "title": "ሰብህዎ ለአምላክነ",
+    "subtitle":"አዝ፡ 'ሰብህዎ ለአምላክነ ሃሌ ሉያ ለእግዚአብሔር /፪/ በሰማይ በምድር/፮/' ",
+  "sections": [
+    {
+      "text": "፩. ሰማዩን ያልምሶሶ አጽንቷል በቃሉ መሬትን በውሆች መሃል መስርቷል በጥበቡ ይታያል ያበራል ጌታ ዛሬም በስራው ምስጉን ነው ሰራዊት ሁሉ ያመሰገነው"
+    },
+    {
+      "text": "፪. ምህረቱ ይቅርታው ብዙ ከወሰን የሰፋ አባት ነው ብርቱ መጠጊያ የሰው ልጆች ተስፋ መጋቢ ለፍጥረት ዓለም ታላቅ ባለጸጋ ያብባል ይለመልማል እርሱን የተጠጋ ."
+    },
+    {
+      "text": "፫. ተመስገን ተመስገን ይላል የተጎበኘ ሰው ከጥፋት ከጉስቁልና ከሞት የመለሰው ይቀባል ከታች አንስቶ ከረኝነት ቦታ ይቅርታው ጸጋው ብዙነው ምህረቱ የጌታ"
+      
+      
+    },
+    {
+      "text": "፭. መላእክት በላይ በሰማይ ይዘምሩለታል ዳዊትም ከበገናው ጋር በቅኔ ተነስቷል በምድርም እኛ ልጆቹ እንበል ንሴብሆ ይገባል ለአምላከ እስራኤል ውዳሴ አምልኮ"
+    }
+    
+  ],
+  "link":"https://youtu.be/OS8YgYZDKfY?is=qA4rRI0zQCEYHutv"
+}
+
+}
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+
+  
+  
+    
+   
+   
+    
+    
+    
 }
 
 
