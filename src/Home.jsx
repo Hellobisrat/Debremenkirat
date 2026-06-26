@@ -2,64 +2,64 @@
 import emebetachin from "./image/emebetachint.png";
 import church from "./image/church.png";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+
 
 function Home() {
-  const [now, setNow] = useState(new Date());
+  // const [now, setNow] = useState(new Date());
 
-  // Short rotating messages
-  const shortMessages = [
-    "የነገ ተረጎሞች",
-    "ሰርቃለም",
-    "ስብሃት",
-    "ሰላም አለሙ"
-  ];
+  // // Short rotating messages
+  // const shortMessages = [
+  //   "የነገ ተረጎሞች",
+  //   "ሰርቃለም",
+  //   "ስብሃት",
+  //   "ሰላም አለሙ"
+  // ];
 
-  // Long announcement
-  const longMessage =
-    "እንደምን ከረማችሁ የፍሬ ሃይማኖት የሰንበት ት/ቤት አባላት። በወር $10 የአመት $120 መዋጫ እንዳለ ይታወቃል። መዋጮውን ያልከፈሉ አባላት በቤተክርስቲያን አካውንት ዜል ማድረግ ይችላሉ።";
+  // // Long announcement
+  // const longMessage =
+  //   "እንደምን ከረማችሁ የፍሬ ሃይማኖት የሰንበት ት/ቤት አባላት። በወር $10 የአመት $120 መዋጫ እንዳለ ይታወቃል። መዋጮውን ያልከፈሉ አባላት በቤተክርስቲያን አካውንት ዜል ማድረግ ይችላሉ።";
 
-  const [msgIndex, setMsgIndex] = useState(0);
-  const [showLong, setShowLong] = useState(false);
+  // const [msgIndex, setMsgIndex] = useState(0);
+  // const [showLong, setShowLong] = useState(false);
 
   // Rotate messages
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!showLong) {
-        if (msgIndex < shortMessages.length - 1) {
-          setMsgIndex(msgIndex + 1);
-        } else {
-          setShowLong(true);
-        }
-      } else {
-        setShowLong(false);
-        setMsgIndex(0);
-      }
-    }, 4000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!showLong) {
+  //       if (msgIndex < shortMessages.length - 1) {
+  //         setMsgIndex(msgIndex + 1);
+  //       } else {
+  //         setShowLong(true);
+  //       }
+  //     } else {
+  //       setShowLong(false);
+  //       setMsgIndex(0);
+  //     }
+  //   }, 4000);
 
-    return () => clearInterval(interval);
-  }, [msgIndex, showLong]);
+  //   return () => clearInterval(interval);
+  // }, [msgIndex, showLong]);
 
-  // Live clock
-  useEffect(() => {
-    const timer = setInterval(() => setNow(new Date()), 1000);
-    return () => clearInterval(timer);
-  }, []);
+  // // Live clock
+  // useEffect(() => {
+  //   const timer = setInterval(() => setNow(new Date()), 1000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
-  const day = now.toLocaleDateString("am-ET", { weekday: "long" });
-  const time = now.toLocaleTimeString("am-ET", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  // const day = now.toLocaleDateString("am-ET", { weekday: "long" });
+  // const time = now.toLocaleTimeString("am-ET", {
+  //   hour: "2-digit",
+  //   minute: "2-digit",
+  // });
 
-  // Show messages only Sat 6 PM → Sun 12 PM
-  const showMessages = (() => {
-    const d = now.getDay(); // 0=Sun, 6=Sat
-    const h = now.getHours();
-    if (d === 6 && h >= 18) return true;
-    if (d === 0 && h < 12) return true;
-    return false;
-  })();
+  // // Show messages only Sat 6 PM → Sun 12 PM
+  // const showMessages = (() => {
+  //   const d = now.getDay(); // 0=Sun, 6=Sat
+  //   const h = now.getHours();
+  //   if (d === 6 && h >= 18) return true;
+  //   if (d === 0 && h < 12) return true;
+  //   return false;
+  // })();
 
   return (
     <div
@@ -117,19 +117,10 @@ function Home() {
           >
             ጀምር
           </Link>
-
-          <div className="bg-white/80 dark:bg-gray-800/80 shadow-lg rounded-xl flex items-center justify-around gap-1 p-1 w-[200px]">
-            <p className="text-gray-700 dark:text-gray-200 text-sm font-semibold">
-              ዛሬ፡ {day}
-            </p>
-            <p className="text-red-600 dark:text-gray-100 text-lg font-bold">
-              {time}
-            </p>
-          </div>
         </div>
 
         {/* RIGHT — ROTATING MESSAGES */}
-        {showMessages && (
+        {/* {showMessages && (
           <div className="bg-white/20 dark:bg-gray-800/80 backdrop-blur-md 
                           rounded-2xl shadow-xl p-6 flex flex-col justify-center 
                           text-center animate-fadeIn">
@@ -139,7 +130,7 @@ function Home() {
               {showLong ? longMessage : shortMessages[msgIndex]}
             </p>
           </div>
-        )}
+        )} */}
 
       </div>
     </div>

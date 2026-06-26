@@ -4,12 +4,12 @@ import geyorgis from "../../../image/geyorgis.png";
 
 const days = [
   { label: "ለማርያም", link: "/song/emebetachin/lemariam" },
-  { label: "ማርያም ማርያም", link: "/song/emebetachin/mariammariam" },
+  { label: "ማርያም ማርያም ብዬ", link: "/song/emebetachin/mariammariam" },
   { label: "እናት አለኝ የምታብስ እንባ", link: "/song/emebetachin/enatalegn" },
   { label: "እንተ በህሊና", link: "/song/emebetachin/entebehilina" },
   { label: "እመቤቴ የአምላክ እናት", link: "/song/emebetachin/yamilakenat" },
   { label: "የያሬድ ውብ ዜማ", link: "/song/emebetachin/yeyaredwebzema" },
-  { label: "እመቤቴ የአምላክ እናት", link: "/song/emebetachin/emebeteyamilakenat" }
+  { label: "የፍቅር እናት የሠላም", link: "/song/emebetachin/yefikirenat" }
 ];
 
 export default function Index1() {

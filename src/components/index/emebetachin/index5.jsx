@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 
 const days = [
-  { label: "ስደትሽን ሳስብ", link: "/song/emebetachin/sidetish" },
-  { label: "ክበበ ጌራ ወርቅ", link: "/song/emebetachin/kibebe" },
-  { label: "ገሊላ እትዊ", link: "/song/emebetachin/gelilaetewi" },
-  { label: "አዳምን ለማዳን", link: "/song/emebetachin/adaminlemadan" },
-  { label: "አንቺን የያዘ ሰው", link: "/song/emebetachin/anchinyeyazesew" },
-  { label: "ምክንያት ስላለኝ ነው", link: "/song/emebetachin/mikniyatsilalegn" },
-  {label:"እመ አምላክ ", link:"/song/emebetachin/emeamlak"}
+  { label: "ያለሽ ልዪ ፀጋ ያለሽ", link: "/song/emebetachin/yaleshleyu" },
+  { label: "ገብርኤል በሰማይ ", link: "/song/emebetachin/elsabetbemidir" },
+  { label: "ድንግል ፈጣሪዋን ወለደችው", link: "/song/emebetachin/dingilfetariwan" },
+  { label: "ማርያም እመቤቴ የአምላክ እናት", link: "/song/emebetachin/mariamemebet1" },
+  { label: "ድንግል ትንሳኤሽን እስከምናይ ድረስ", link: "/song/emebetachin/dingiltinsayeshen" },
+  { label: "ድንግል ሆይ ወደ እኔ ትመጪ ዘንድ", link: "/song/emebetachin/dingilhoye" },
+  {label:"ማርያም ደስ ይበልሽ በገብርኤል ሰላምታ", link:"/song/emebetachin/mariamdesyibelish"}
 ];
 
-const Index4 = () => {
+const Index5 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,13 +65,13 @@ const Index4 = () => {
             </button>
           </Link>
 
-          <Link to="/index5">
+          <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ቀጥል
             </button>
           </Link>
 
-          <Link to="/">
+          <Link to="/index5">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ቤት
             </button>
@@ -82,4 +82,4 @@ const Index4 = () => {
   );
 };
 
-export default Index4;
+export default Index5;
