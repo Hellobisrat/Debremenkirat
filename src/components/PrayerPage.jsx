@@ -1,6 +1,5 @@
 import { highlightText } from "../utils/highlight"
-import { ArrowLeftIcon} from "lucide-react"
-import { FaYoutube } from "react-icons/fa";
+
 
 
 export default function PrayerPage({ title, subtitle, sections,link }) {
@@ -36,19 +35,25 @@ export default function PrayerPage({ title, subtitle, sections,link }) {
             />
           ))}
         </div>
-        <a 
-  href={link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block mt-6 text-center w-25 p-6 rounded-full flex items-center justify-center bg-red-300 text-sky-600 dark:text-yellow-400 
-             font-bold  hover:text-yellow-700 dark:hover:text-yellow-300 
-             transition"
-
->
-  <FaYoutube className="w-12 text-red-500" />
-   You tube link
-   <ArrowLeftIcon className="w-12 text-black hover:rotate-180 hover:text-red-400"/>
-</a>
+  {link && (
+  <div className="mt-6 w-full flex justify-center">
+    <iframe
+      className="rounded-xl shadow-lg"
+      width="100%"
+      height="315"
+      src={
+        link
+          .replace("youtu.be/", "www.youtube.com/embed/")
+          .replace("watch?v=", "embed/")
+          .split("?")[0]
+      }
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+)}
 
       </div>
     </div>
