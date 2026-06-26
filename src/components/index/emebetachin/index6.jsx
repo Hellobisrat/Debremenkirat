@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 
 const days = [
-  { label: "ያለሽ ልዪ ፀጋ ያለሽ", link: "/song/emebetachin/yaleshleyu" },
-  { label: "ገብርኤል በሰማይ ", link: "/song/emebetachin/elsabetbemidir" },
-  { label: "ድንግል ፈጣሪዋን ወለደችው", link: "/song/emebetachin/dingilfetariwan" },
-  { label: "ማርያም እመቤቴ የአምላክ እናት", link: "/song/emebetachin/mariamemebet1" },
-  { label: "ድንግል ትንሳኤሽን እስከምናይ ድረስ", link: "/song/emebetachin/dingiltinsayeshen" },
-  { label: "ድንግል ሆይ ወደ እኔ ትመጪ ዘንድ", link: "/song/emebetachin/dingilhoye" },
-  {label:"ማርያም ደስ ይበልሽ በገብርኤል ሰላምታ", link:"/song/emebetachin/mariamdesyibelish"}
+  { label: "ድንግል መከራሽን ጥቂት ላስታውሰው", link: "/song/emebetachin/dingilmekerash" },
+  { label: "ሰላም ለኪ እያለ ", link: "/song/emebetachin/selameleki" },
+  { label: "የብርሃን ጎርፍ ናት ድንግል እናታችን", link: "/song/emebetachin/yebirhangorf" },
+  { label: "ስምሽን ጠርቼ መቼ አፍራለሁ", link: "/song/emebetachin/simshenterche" },
+  { label: "", link: "/song/emebetachin/" },
+  { label: "", link: "/song/emebetachin/" },
+  {label:"", link:"/song/emebetachin/"}
 ];
 
-const Index5 = () => {
+const Index6 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,7 +65,7 @@ const Index5 = () => {
             </button>
           </Link>
 
-          <Link to="/index6">
+          <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ቀጥል
             </button>
@@ -82,4 +82,4 @@ const Index5 = () => {
   );
 };
 
-export default Index5;
+export default Index6;
