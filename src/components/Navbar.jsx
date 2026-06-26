@@ -16,7 +16,7 @@ const Navbar = () => {
         will-change-transform
       "
     >
-      <h5 className="text-sky-200 bg-yellow-200/20 rounded-full flex items-center justify-center w-50 p-2 dark:text-purple-300 text-xl font-bold tracking-wide drop-shadow-md">
+      <h5 className="text-sky-200 bg-slate-600 rounded-full flex items-center justify-center w-50 p-2 dark:text-purple-300 text-xl font-bold tracking-wide drop-shadow-md hover:scale-110 hover:bg-purple-300">
         <Link to="/">ፍሬ ሃይማኖት</Link>
       </h5>
 

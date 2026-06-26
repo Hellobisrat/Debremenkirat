@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { FiSun } from "react-icons/fi";
+import { FaCross } from "react-icons/fa";
+
+
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(
@@ -29,7 +32,7 @@ export default function ThemeToggle() {
   {theme === "dark" ? (
     <FiSun className="text-yellow-300 text-2xl drop-shadow-[0_0_6px_rgba(255,255,0,0.6)]"/>
   ) : (
-    <FiMoon className="text-slate-200 text-2xl drop-shadow-[0_0_6px_rgba(150,200,255,0.5)]" />
+    <FaCross className="text-slate-200 text-2xl drop-shadow-[0_0_6px_rgba(150,200,255,0.5)] w-5" />
   )}
 </button>
   );
