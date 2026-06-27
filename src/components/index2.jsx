@@ -3,8 +3,16 @@ import { motion } from "framer-motion"
 import geyorgis from "../image/geyorgis.png"
 
 
+
+
 const days = [
-  { label:"mezmur1", link: "/yegetamezmur1" },
+  { label:"ሰብህዎ ለአምላክነ", link: "/song/yegetachin/sebhewo" },
+  {label:"እኔ አንተ ቤት እኔ", link:"/song/yegetachin/eneantebete" },
+  {label:"ላመስግንህ የኔ ጌታ",link:"/song/yegetachin/lamesginih"},
+  {label:"ወደ ማደሪያው ገብቼ", link:"/song/yegetachin/wedemaderiaw"},
+  {label:"ለእኔስ ወደ እግዚአብሔር መቅረብ",link:"/song/yegetachin/lenesewedeegziyabher"},
+  {label:"በርጠሚዬስ ነኝ",link:"/song/yegetachin/beteremiyese"},
+  {label:"ስምህ በሁሉ ተመስገነ",link:"/song/yegetachin/simihbehulu"},
   
   
 ]
