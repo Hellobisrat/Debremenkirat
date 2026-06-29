@@ -9,7 +9,7 @@ const Footer = () => {
       shadow-md p-2 flex justify-around items-center 
       text-gray-700 dark:text-gray-200
       backdrop-blur-sm
-      transition-colors duration-300
+      transition-colors duration-300 h-[55px]
     ">
       <div className="flex flex-col">
         <p className="font-bold text-lg text-slate-500">Services</p>

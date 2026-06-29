@@ -4,10 +4,7 @@ import PrayerPage from "../components/PrayerPage";
 import { getSong } from "../utils/getSong";
 
 export default function Yesamintu() {
-  // Emebetachin list
   const categories = Object.keys(songs.emebetachin);
-
-  // Getachin list
   const lists = Object.keys(songs.yegetachin);
 
   const [selected, setSelected] = useState(
@@ -18,19 +15,10 @@ export default function Yesamintu() {
     localStorage.getItem("yegetaSong") || lists[0]
   );
 
-  // Load data
+  const [showEmbed, setShowEmbed] = useState(true);
+
   const data = getSong("emebetachin", selected);
   const data1 = getSong("yegetachin", yegetaMez);
-
-  const handleChange = (value) => {
-    setSelected(value);
-    localStorage.setItem("weeklySong", value);
-  };
-
-  const handleChange1 = (value) => {
-    setYegetaMez(value);
-    localStorage.setItem("yegetaSong", value);
-  };
 
   return (
     <div className="p-4 max-w-3xl mx-auto">
@@ -39,10 +27,12 @@ export default function Yesamintu() {
       </h1>
 
       <div className="flex gap-4">
-        {/* Emebetachin */}
         <select
           value={selected}
-          onChange={(e) => handleChange(e.target.value)}
+          onChange={(e) => {
+            setSelected(e.target.value);
+            localStorage.setItem("weeklySong", e.target.value);
+          }}
           className="w-full p-3 rounded-lg bg-gray-200 dark:bg-gray-700"
         >
           {categories.map((cat) => (
@@ -52,10 +42,12 @@ export default function Yesamintu() {
           ))}
         </select>
 
-        {/* Getachin */}
         <select
           value={yegetaMez}
-          onChange={(e) => handleChange1(e.target.value)}
+          onChange={(e) => {
+            setYegetaMez(e.target.value);
+            localStorage.setItem("yegetaSong", e.target.value);
+          }}
           className="w-full p-3 rounded-lg bg-gray-200 dark:bg-gray-700"
         >
           {lists.map((item) => (
@@ -66,12 +58,20 @@ export default function Yesamintu() {
         </select>
       </div>
 
+      {/* Toggle Button */}
+      <button
+        onClick={() => setShowEmbed(!showEmbed)}
+        className="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded-lg mt-4"
+      >
+        {showEmbed ? "Show Link Instead" : "Show Video Instead"}
+      </button>
+
       <div className="mt-6">
-        <PrayerPage {...data} />
+        <PrayerPage {...data} showEmbed={showEmbed} />
       </div>
 
       <div className="mt-6">
-        <PrayerPage {...data1} />
+        <PrayerPage {...data1} showEmbed={showEmbed} />
       </div>
     </div>
   );

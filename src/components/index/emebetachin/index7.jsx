@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
-import geyorgis from "../../../image/geyorgis.png";
+import geyorgis from "../../../image/giyorgis.png";
 import { Link } from "react-router-dom";
 
 
 const days = [
-  { label: "ድንግል መከራሽን ጥቂት ላስታውሰው", link: "/song/emebetachin/dingilmekerash" },
-  { label: "ሰላም ለኪ እያለ ", link: "/song/emebetachin/selameleki" },
-  { label: "የብርሃን ጎርፍ ናት ድንግል እናታችን", link: "/song/emebetachin/yebirhangorf" },
-  { label: "ስምሽን ጠርቼ መቼ አፍራለሁ", link: "/song/emebetachin/simshenterche" },
-  { label: "የጌታዬ እናት ማርያም", link: "/song/emebetachin/yegetayenat" },
-  { label: "አብሰራ ገብርኤል", link: "/song/emebetachin/abseragebriel" },
-  {label:"በምን በምን እንመስላት", link:"/song/emebetachin/beminbemin"}
+  { label: "ዮም ፍስሀ ኮነ", link: "/song/emebetachin/bentelideta" },
+  { label: "መዘንጋት ባለበት በታናሽ ህሊና", link: "/song/emebetachin/mezengatbalebet" },
+  { label: "ድንግል ማርያም የወርቅ መሰላል ነሽ", link: "/song/emebetachin/yewerkmeselale" },
+  { label: "ለምኚ ድንግል ለምኚ", link: "/song/emebetachin/lemgnidengil" },
+  { label: "", link: "/song/emebetachin/" },
+  { label: "", link: "/song/emebetachin/" },
+  {label:"", link:"/song/emebetachin/"}
 ];
 
-const Index6 = () => {
+const Index7 = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -59,13 +59,13 @@ const Index6 = () => {
         </div>
 
         <div className="flex justify-between">
-          <Link to="/index5">
+          <Link to="/index6">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ተመለስ
             </button>
           </Link>
 
-          <Link to="/index7">
+          <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ቀጥል
             </button>
@@ -82,4 +82,4 @@ const Index6 = () => {
   );
 };
 
-export default Index6;
+export default Index7;
