@@ -6,5 +6,5 @@ export default function SongPage() {
   const { category, id } = useParams();
   const data = getSong(category, id);
 
-  return <PrayerPage {...data} />;
+  return <PrayerPage {...data} showEmbed={true}  />;
 }
