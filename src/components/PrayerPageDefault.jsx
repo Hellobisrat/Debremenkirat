@@ -84,20 +84,21 @@ export default function PrayerPageDefault({
 
           {/* Telegram */}
           <button
-            onClick={() => {
-              const fullText = `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`;
-              const telegramURL =
-                "https://t.me/share/url?url=" +
-                encodeURIComponent(link) +
-                "&text=" +
-                encodeURIComponent(fullText);
+  onClick={() => {
+    const shortText = `${title}\n\nYouTube: ${link}`;
+    const telegramURL =
+      "https://t.me/share/url?url=" +
+      encodeURIComponent(link) +
+      "&text=" +
+      encodeURIComponent(shortText);
 
-              window.open(telegramURL, "_blank");
-            }}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md"
-          >
-            ወደ Telegram ላክ
-          </button>
+    window.open(telegramURL, "_blank");
+  }}
+  className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md"
+>
+  ወደ Telegram ላክ
+</button>
+
         </div>
       </div>
     </div>
