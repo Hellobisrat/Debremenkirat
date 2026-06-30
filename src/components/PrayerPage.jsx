@@ -1,90 +1,114 @@
+import React from "react";
 import { highlightText } from "../utils/highlight";
 
-export default function PrayerPage({ title, subtitle, sections,link }) {
-
-  const lyricsText = sections.map(s => s.text).join("\n\n");
+export default function PrayerPage({
+  title,
+  subtitle,
+  sections,
+  link,
+  showEmbed,
+}) {
+  const lyricsText = sections.map((s) => s.text).join("\n\n");
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-500 dark:from-gray-900 dark:to-gray-800 py-2 px-2">
+    <div className="bg-sky-100 dark:bg-gray-800 shadow-xl rounded-xl p-6 mt-6">
 
-        <div className="max-w-3xl mx-auto bg-sky-100 dark:bg-gray-800 shadow-xl rounded-xl p-8">
+      {/* Title */}
+      <h1 className="text-center text-2xl font-bold dark:text-gray-100 mb-2">
+        {title}
+      </h1>
 
-        {/* Page Title */}
-        
+      {/* Subtitle */}
+      {subtitle && (
+        <h2 className="text-lg font-semibold text-center mb-4 dark:text-gray-200">
+          {subtitle}
+        </h2>
+      )}
 
-        {/* PPT Slide */}
-        <div className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center min-h-[300px]">
-
-          {/* PPT Title */}
-          <h2 className="text-3xl font-bold mb-4">
-            {title}
-          </h2>
-
-          {/* PPT Subtitle */}
-          {subtitle && (
-            <h3 className="text-xl font-semibold mb-6 text-gray-700 dark:text-gray-300">
-              {subtitle}
-            </h3>
-          )}
-
-          {/* PPT Lyrics */}
-          <p
-            className="text-2xl font-semibold leading-relaxed whitespace-pre-line"
-            dangerouslySetInnerHTML={{
-              __html: highlightText(lyricsText).replace(/\n/g, "<br/>")
-            }}
-          />
+      {/* Video or Link */}
+      {showEmbed ? (
+        <div className="mt-4 w-full flex justify-center">
+          <iframe
+            title={`video-${title}`}
+            className="rounded-xl shadow-lg"
+            width="100%"
+            height="315"
+            src={
+              link
+                .replace("youtu.be/", "www.youtube.com/embed/")
+                .replace("watch?v=", "embed/")
+                .split("?")[0]
+            }
+            allowFullScreen
+          ></iframe>
         </div>
+      ) : (
+        <a
+          href={link}
+          rel="noopener noreferrer"
+          className="text-blue-500 underline text-lg font-semibold"
+        >
+          የዩቲዩብ ሊንክ ክፈት
+        </a>
+      )}
 
+      {/* Lyrics */}
+      <div className="mt-6 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+        <p
+          className="text-lg leading-relaxed whitespace-pre-line"
+          dangerouslySetInnerHTML={{
+            __html: highlightText(lyricsText).replace(/\n/g, "<br/>"),
+          }}
+        />
       </div>
-      <div className="flex  items-center justify-center gap-3 mt-6">
 
-  {/* Copy Lyrics */}
-  <button
-    onClick={() => {
-      const fullText = `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`;
-      navigator.clipboard.writeText(fullText);
-      alert("መዝሙሩ ከሊንኩ ጋር ተቀድቶ ተቀድቷል!");
-    }}
-    className="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md"
-  >
-    መዝሙሩን ከሊንኩ ጋር ቅዳ
-  </button>
+      {/* SHARE BUTTONS */}
+      <div className="flex flex-wrap gap-3 mt-6">
 
-  {/* Email */}
-  <button
-    onClick={() => {
-      const subject = encodeURIComponent(`የሳምንቱ መዝሙር: ${title}`);
-      const body = encodeURIComponent(
-        `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`
-      );
+        {/* Copy Lyrics */}
+        <button
+          onClick={() => {
+            const fullText = `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`;
+            navigator.clipboard.writeText(fullText);
+            alert("መዝሙሩ ተቀድቷል!");
+          }}
+          className="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md"
+        >
+          መዝሙሩን ቅዳ
+        </button>
 
-      window.location.href = `mailto:zerbisrat@gmail.com?subject=${subject}&body=${body}`;
-    }}
-    className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md text-center"
-  >
-    በኢሜይል ላክ
-  </button>
+        {/* Email */}
+        <button
+          onClick={() => {
+            const subject = encodeURIComponent("የሳምንቱ መዝሙር");
+            const body = encodeURIComponent(
+              `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`
+            );
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+          }}
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md"
+        >
+          በኢሜይል ላክ
+        </button>
 
-  {/* Telegram */}
-  <button
-    onClick={() => {
-      const fullText = `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`;
-      const telegramURL =
-        "https://t.me/share/url?url=" +
-        encodeURIComponent(link) +
-        "&text=" +
-        encodeURIComponent(fullText);
+        {/* Telegram */}
+        <button
+          onClick={() => {
+            const fullText = `${title}\n\n${subtitle || ""}\n\n${lyricsText}\n\nYouTube: ${link}`;
+            const telegramURL =
+              "https://t.me/share/url?url=" +
+              encodeURIComponent(link) +
+              "&text=" +
+              encodeURIComponent(fullText);
 
-      window.open(telegramURL, "_blank");
-    }}
-    className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md"
-  >
-    ወደ Telegram ላክ
-  </button>
-
-</div>
-
+            window.open(telegramURL, "_blank");
+          }}
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md"
+        >
+          ወደ Telegram ላክ
+        </button>
+      </div>
     </div>
   );
 }
+
