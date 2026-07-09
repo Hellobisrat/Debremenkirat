@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import geyorgis from "../image/geyorgis.png"
+import geyorgis from '../../../image/geyorgis.png'
+import { Link } from "react-router-dom"
 
 
 
 
 const days = [
-  { label:"ሰብህዎ ለአምላክነ", link: "/song/yegetachin/sebhewo" },
-  {label:"እኔ አንተ ቤት እኔ", link:"/song/yegetachin/eneantebete" },
-  {label:"ላመስግንህ የኔ ጌታ",link:"/song/yegetachin/lamesginih"},
-  {label:"ወደ ማደሪያው ገብቼ", link:"/song/yegetachin/wedemaderiaw"},
-  {label:"ለእኔስ ወደ እግዚአብሔር መቅረብ",link:"/song/yegetachin/lenesewedeegziyabher"},
-  {label:"በርጠሚዬስ ነኝ",link:"/song/yegetachin/beteremiyese"},
-  {label:"ስምህ በሁሉ ተመስገነ",link:"/song/yegetachin/simihbehulu"},
+  { label:"ኃያል ነው እግዚአብሔር  ", link: "/song/yegetachin/hayale" },
+  {label:" ፍቅርህ ማረከኝ በሕይወቴ ", link:"/song/yegetachin/fikirh" },
+  {label:"ሃይሌን ጉልበቴን ታድሳለህ ",link:"/song/yegetachin/hailengulebeten"},
+  {label:"ድል አለ በስምሀ ", link:"/song/yegetachin/dileale"},
+  {label:"እውነተኛ ሰላም ያለው ከቤትህ ነው",link:"/song/yegetachin/ewnetegnaselam"},
+  {label:"በምን እፅናናለሁ",link:"/song/yegetachin/bemin"},
+  {label:"አጌጥንበት ስምህን",link:"/song/yegetachin/agetinibet"},
   
   
 ]
 
-const Index2 = () => {
+const IndexD = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,28 +65,27 @@ const Index2 = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to="/">
+          <Link to="/indexC">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ተመለስ
+              Back
             </button>
           </Link>
 
-          <Link to="/indexA">
+          <Link to="/indexE">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቀጥል
+              Next
             </button>
           </Link>
 
           <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቤት
+              Home
             </button>
           </Link>
         </div>
       </div>
-      
     </div>
   )
 }
 
-export default Index2
+export default IndexD

@@ -1,23 +1,23 @@
 import { motion } from "framer-motion"
-import geyorgis from "../image/geyorgis.png"
+import geyorgis from '../../../image/geyorgis.png'
 import { Link } from "react-router-dom"
 
 
 
 
 const days = [
-  { label:"ስላሴን አመስግኑ ", link: "/song/yegetachin/silasenamesginu" },
-  {label:"በድንኳኔ እልልታ ሙሉ ነው ", link:"/song/yegetachin/bedinkuane" },
-  {label:"ቸርነትህ ነዉ ያደረሰኝ እስከ ዛሬ ",link:"/song/yegetachin/cherenetih"},
-  {label:"ደስ ይበለን አምላክ አለ መሐላችን ", link:"/song/yegetachin/desyibelen"},
-  {label:"ሞገድ ሲመታኝ ማእበሉ ",link:"/song/yegetachin/mogedsimetagn"},
-  {label:"በዘባነ ኪሩብ ለሚቀመጠው",link:"/song/yegetachin/bezebanekirub"},
-  {label:"ያላንተ ጌታ ደስታ መቼ አለ ",link:"/song/yegetachin/yalante"},
+  { label:"አማኑኤል ተመስገን", link: "/song/yegetachin/amanueltemesgen" },
+  {label:"እኔ እሆንን ጌታሆይ ", link:"/song/yegetachin/enehonine" },
+  {label:"የመጨረሻው ቀን ",link:"/song/yegetachin/yemechereshawken"},
+  {label:"ናና የምስጋና ጌታ ", link:"/song/yegetachin/yemisganageta"},
+  {label:"ሃያል ነው እርሱ ዘለዓለማዊ",link:"/song/yegetachin/hayalenew"},
+  {label:"ጌታ ተነስቷል  እልል  እልል  በሉ",link:"/song/yegetachin/getatenestual"},
+  {label:"በንጹህ ደሙ ያዳነን ",link:"/song/yegetachin/benestudemu"},
   
   
 ]
 
-const IndexB = () => {
+const IndexC = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,21 +65,22 @@ const IndexB = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to="/indexA">
+          <Link to="/indexB">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               Back
             </button>
           </Link>
 
-          <Link to="/indexC">
-            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              Next
-            </button>
-          </Link>
+          
 
           <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               Home
+            </button>
+          </Link>
+          <Link to="/indexD">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              Next
             </button>
           </Link>
         </div>
@@ -88,4 +89,4 @@ const IndexB = () => {
   )
 }
 
-export default IndexB
+export default IndexC
