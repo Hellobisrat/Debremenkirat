@@ -6,18 +6,18 @@ import { Link } from "react-router-dom"
 
 
 const days = [
-  { label:"ማን እንደ እርሱ እንደ እግዚአብሄር", link: "/song/yegetachin/manendesu" },
-  {label:"ጉልበቴና ሃይሌ ያደረኩት", link:"/song/yegetachin/gulebetenahaile" },
-  {label:"ቸርነትህ ብዙ ምሕረትህ ብዙ",link:"/song/yegetachin/cherenetihbizu"},
-  {label:"ኑ በብርሃኑ ተመላለሱ", link:"/song/yegetachin/nubebirhanu"},
-  {label:"ኖላዊነ ሔር መድኃኔዓለም",link:"/song/yegetachin/nolawi"},
-  {label:"የጥበብ ሰዎች መጡ",link:"/song/yegetachin/yetibesewoch"},
-  {label:"እየባረካቸው ወደ ላይ አቀና",link:"/song/yegetachin/eyebarekachew"},
+  { label:"አማኑኤል ተመስገን", link: "/song/yegetachin/amanueltemesgen" },
+  {label:"እኔ እሆንን ጌታሆይ ", link:"/song/yegetachin/enehonine" },
+  {label:"የመጨረሻው ቀን ",link:"/song/yegetachin/yemechereshawken"},
+  {label:"ናና የምስጋና ጌታ ", link:"/song/yegetachin/yemisganageta"},
+  {label:"ሃያል ነው እርሱ ዘለዓለማዊ",link:"/song/yegetachin/hayalenew"},
+  {label:"ጌታ ተነስቷል  እልል  እልል  በሉ",link:"/song/yegetachin/getatenestual"},
+  {label:"በንጹህ ደሙ ያዳነን ",link:"/song/yegetachin/benestudemu"},
   
   
 ]
 
-const IndexA = () => {
+const IndexC = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,22 +65,21 @@ const IndexA = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to="/index2">
+          <Link to="/indexB">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ተመለስ
+              Back
             </button>
           </Link>
 
-          
+          <Link to="/indexC">
+            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
+              Next
+            </button>
+          </Link>
 
           <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               Home
-            </button>
-          </Link>
-          <Link to="/indexB">
-            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              Next
             </button>
           </Link>
         </div>
@@ -89,4 +88,4 @@ const IndexA = () => {
   )
 }
 
-export default IndexA
+export default IndexC

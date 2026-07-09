@@ -8,11 +8,11 @@ import { Link } from "react-router-dom"
 const days = [
   { label:"ስላሴን አመስግኑ ", link: "/song/yegetachin/silasenamesginu" },
   {label:"በድንኳኔ እልልታ ሙሉ ነው ", link:"/song/yegetachin/bedinkuane" },
-  {label:" ",link:"/song/yegetachin/"},
-  {label:" ", link:"/song/yegetachin/"},
-  {label:" ",link:"/song/yegetachin/"},
-  {label:"",link:"/song/yegetachin/"},
-  {label:"",link:"/song/yegetachin/"},
+  {label:"ቸርነትህ ነዉ ያደረሰኝ እስከ ዛሬ ",link:"/song/yegetachin/cherenetih"},
+  {label:"ደስ ይበለን አምላክ አለ መሐላችን ", link:"/song/yegetachin/desyibelen"},
+  {label:"ሞገድ ሲመታኝ ማእበሉ ",link:"/song/yegetachin/mogedsimetagn"},
+  {label:"በዘባነ ኪሩብ ለሚቀመጠው",link:"/song/yegetachin/bezebanekirub"},
+  {label:"ያላንተ ጌታ ደስታ መቼ አለ ",link:"/song/yegetachin/yalante"},
   
   
 ]
@@ -65,21 +65,21 @@ const IndexB = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to="/index2">
+          <Link to="/indexA">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ተመለስ
+              Back
             </button>
           </Link>
 
-          <Link to="/indexB">
+          <Link to="/indexC">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቀጥል
+              Next
             </button>
           </Link>
 
           <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቤት
+              Home
             </button>
           </Link>
         </div>
