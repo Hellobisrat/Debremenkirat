@@ -1,46 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { routes } from "./route.js";
 
 import Navbar from "./components/Navbar";
-import Index from "./components/index";
-import Index1 from "./components/index/emebetachin/index1";
-import Index2 from "./components/index2";
-import Index3 from "./components/index/emebetachin/index3";
-import Index4 from "./components/index/emebetachin/index4";
-import Index5 from "./components/index/emebetachin/index5";
-import Index6 from "./components/index/emebetachin/index6";
-import Index7 from "./components/index/emebetachin/index7";
-import IndexA from "./components/indexA";
-import IndexB from "./components/indexB";
-import IndexC from "./components/indexC";
 
-import Home from "./Home";
-import SongPage from "./pages/songPage";
-import Yesamintu from "./pages/yesamintu";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <BrowserRouter>
+     <BrowserRouter>
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/index" element={<Index />} />
-        <Route path="/index1" element={<Index1 />} />
-        <Route path="/index2" element={<Index2 />} />
-        <Route path="/index3" element={<Index3 />} />
-        <Route path="/index4" element={<Index4 />} />
-        <Route path="/index5" element={<Index5/>}/>
-        <Route path="/index6" element={<Index6/>}/>
-        <Route path="/index7" element={<Index7/>}/>
-        <Route path="/indexA" element={<IndexA/>}/>
-        <Route path="/indexB" element={<IndexB/>}/>
-        <Route path="/indexC" element={<IndexC/>}/>
-
-        {/* The ONLY song route you want */}
-        <Route path="/song/:category/:id" element={<SongPage />} />
-
-        <Route path="/yesamintu" element={<Yesamintu />} />
+        {routes.map((r, i) => (
+          <Route key={i} path={r.path} element={r.element} />
+        ))}
       </Routes>
 
       <Footer />
