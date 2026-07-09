@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import geyorgis from "../image/geyorgis.png"
+import { Link } from "react-router-dom"
 
 
 
 
 const days = [
-  { label:"ሰብህዎ ለአምላክነ", link: "/song/yegetachin/sebhewo" },
-  {label:"እኔ አንተ ቤት እኔ", link:"/song/yegetachin/eneantebete" },
-  {label:"ላመስግንህ የኔ ጌታ",link:"/song/yegetachin/lamesginih"},
-  {label:"ወደ ማደሪያው ገብቼ", link:"/song/yegetachin/wedemaderiaw"},
-  {label:"ለእኔስ ወደ እግዚአብሔር መቅረብ",link:"/song/yegetachin/lenesewedeegziyabher"},
-  {label:"በርጠሚዬስ ነኝ",link:"/song/yegetachin/beteremiyese"},
-  {label:"ስምህ በሁሉ ተመስገነ",link:"/song/yegetachin/simihbehulu"},
+  { label:"ስላሴን አመስግኑ ", link: "/song/yegetachin/silasenamesginu" },
+  {label:"በድንኳኔ እልልታ ሙሉ ነው ", link:"/song/yegetachin/bedinkuane" },
+  {label:" ",link:"/song/yegetachin/"},
+  {label:" ", link:"/song/yegetachin/"},
+  {label:" ",link:"/song/yegetachin/"},
+  {label:"",link:"/song/yegetachin/"},
+  {label:"",link:"/song/yegetachin/"},
   
   
 ]
 
-const Index2 = () => {
+const IndexB = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4 bg-sky-200 bg-cover bg-center relative 
@@ -65,13 +65,13 @@ const Index2 = () => {
           ))}
         </div>
         <div className="flex justify-between">
-          <Link to="/">
+          <Link to="/index2">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ተመለስ
             </button>
           </Link>
 
-          <Link to="/indexA">
+          <Link to="/indexB">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
               ቀጥል
             </button>
@@ -84,9 +84,8 @@ const Index2 = () => {
           </Link>
         </div>
       </div>
-      
     </div>
   )
 }
 
-export default Index2
+export default IndexB

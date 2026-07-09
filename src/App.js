@@ -9,6 +9,8 @@ import Index4 from "./components/index/emebetachin/index4";
 import Index5 from "./components/index/emebetachin/index5";
 import Index6 from "./components/index/emebetachin/index6";
 import Index7 from "./components/index/emebetachin/index7";
+import IndexA from "./components/indexA";
+import IndexB from "./components/indexB";
 
 import Home from "./Home";
 import SongPage from "./pages/songPage";
@@ -30,6 +32,8 @@ export default function App() {
         <Route path="/index5" element={<Index5/>}/>
         <Route path="/index6" element={<Index6/>}/>
         <Route path="/index7" element={<Index7/>}/>
+        <Route path="/indexA" element={<IndexA/>}/>
+        <Route path="/indexB" element={<IndexB/>}/>
 
         {/* The ONLY song route you want */}
         <Route path="/song/:category/:id" element={<SongPage />} />
