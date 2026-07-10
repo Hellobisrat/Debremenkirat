@@ -6,9 +6,9 @@ import { Link } from "react-router-dom"
 
 
 const days = [
-  { label:" ", link: "/song/yegetachin/" },
-  {label:" ", link:"/song/yegetachin/" },
-  {label:" ",link:"/song/yegetachin/"},
+  { label:"ናና አማኑኤል ና መድኃኒቴ ", link: "/song/yegetachin/nanaamanuel" },
+  {label:"ይህችን አመት ተወኝ ", link:"/song/yegetachin/yechenamettewegn" },
+  {label:"ማረኝ ማረኝ ማረኝ መመኪያዬ ",link:"/song/yegetachin/maregnmaregn"},
   {label:"", link:"/song/yegetachin/dileale"},
   {label:"",link:"/song/yegetachin/"},
   {label:"",link:"/song/yegetachin/"},
