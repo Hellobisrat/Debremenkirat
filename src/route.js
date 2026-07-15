@@ -12,6 +12,8 @@ import IndexB from "./components/index/yegetachin/indexB";
 import IndexC from "./components/index/yegetachin/indexC";
 import IndexD from "./components/index/yegetachin/indexD";
 import IndexE from "./components/index/yegetachin/indexE";
+import IndexF from "./components/index/yegetachin/indexF";
+import IndexG from "./components/index/yegetachin/indexG";
 import SongPage from "./pages/songPage";
 import Yesamintu from "./pages/yesamintu";
 
@@ -32,6 +34,8 @@ export const routes = [
   { path: "/indexC", element: <IndexC /> },
   { path: "/indexD", element: <IndexD/> },
   { path:"/indexE", element: <IndexE/>},
+  {path: "/indexF", element:<IndexF/>},
+  {path:"/indexG",element:<IndexG/>},
   { path: "/song/:category/:id", element: <SongPage /> },
   { path: "/yesamintu", element: <Yesamintu /> },
 ];

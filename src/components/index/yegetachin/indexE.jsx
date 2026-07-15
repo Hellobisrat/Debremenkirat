@@ -9,10 +9,10 @@ const days = [
   { label:"ናና አማኑኤል ና መድኃኒቴ ", link: "/song/yegetachin/nanaamanuel" },
   {label:"ይህችን አመት ተወኝ ", link:"/song/yegetachin/yechenamettewegn" },
   {label:"ማረኝ ማረኝ ማረኝ መመኪያዬ ",link:"/song/yegetachin/maregnmaregn"},
-  {label:"", link:"/song/yegetachin/dileale"},
-  {label:"",link:"/song/yegetachin/"},
-  {label:"",link:"/song/yegetachin/"},
-  {label:"",link:"/song/yegetachin/"},
+  {label:"ሰማይ ተከፈተ", link:"/song/yegetachin/semaytekefete"},
+  {label:"አኑሮኛል ቸርነትህ",link:"/song/yegetachin/anurognal"},
+  {label:"እንደ እግዚአብሔር ያለ ማንም የለምና",link:"/song/yegetachin/endegziabheryale"},
+  {label:"ሥላሴ ትትረመም ወትትነከር",link:"/song/yegetachin/silasetitrememe"},
   
   
 ]
