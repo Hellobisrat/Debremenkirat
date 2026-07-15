@@ -74,8 +74,8 @@ const IndexB = () => {
          
 
           <Link to="/">
-            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              Home
+            <button className="p-2 w-full bg-white text-slate-800 rounded-md mt-2">
+              
             </button>
           </Link>
            <Link to="/indexC">

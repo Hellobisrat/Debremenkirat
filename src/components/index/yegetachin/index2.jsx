@@ -67,19 +67,19 @@ const Index2 = () => {
         <div className="flex justify-between">
           <Link to="/">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ተመለስ
+              Back
             </button>
           </Link>
 
           <Link to="/indexA">
             <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቀጥል
+             Next
             </button>
           </Link>
 
           <Link to="/">
-            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2">
-              ቤት
+            <button className="p-2 w-full bg-white text-slate-800 rounded-md mt-2">
+              
             </button>
           </Link>
         </div>

@@ -60,12 +60,12 @@ export default function Index1() {
         <div className="flex gap-2 justify-around">
           <Link to="/index3">
             <button className="p-2 w-full bg-sky-400 text-white rounded-md mt-2 px-12">
-              ቀጥል
+              Next
             </button>
           </Link>
           <Link to="/">
-            <button className="p-2 w-full bg-purple-300 text-slate-800 rounded-md mt-2 px-12">
-              ቤት
+            <button className="p-2 w-full bg-white text-slate-800 rounded-md mt-2 px-12">
+            
             </button>
           </Link>
         </div>
